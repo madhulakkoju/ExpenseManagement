@@ -38,6 +38,32 @@ public class Transaction implements Comparable<Transaction>, Serializable {
 		this.dateOfTransaction[2] = Integer.parseInt(dt[2]);
 	}
 
+	public Transaction() {
+		super();
+		String[] dt = Utilities.dateFormat.format(new Date()).split("-");
+		this.dateOfTransaction = new int[3];
+		this.dateOfTransaction[0] = Integer.parseInt(dt[0]);
+		this.dateOfTransaction[1] = Integer.parseInt(dt[1]);
+		this.dateOfTransaction[2] = Integer.parseInt(dt[2]);
+	}
+	
+	public Transaction(int mon,int yr) {
+		super();
+		
+		this.dateOfTransaction = new int[3];
+		this.dateOfTransaction[0] = 0;
+		this.dateOfTransaction[1] = mon;
+		this.dateOfTransaction[2] = yr;
+	}
+	
+	public Transaction(int yr) {
+		super();
+		this.dateOfTransaction = new int[3];
+		this.dateOfTransaction[0] = 0;
+		this.dateOfTransaction[1] = 0;
+		this.dateOfTransaction[2] = yr;
+	}
+	
 	public Transaction(String participant, int dd,int mm,int yy, TransactionType type, TransactionCategory category, PaymentMode mode,
 			double amount, String remarks) {
 		super();
@@ -136,6 +162,12 @@ public class Transaction implements Comparable<Transaction>, Serializable {
 		}
 		if(this.getMonth() < tr.getMonth()) {
 			return -1;
+		}
+		if(this.getDate() > tr.getDate()) {
+			return 1;
+		}
+		if(this.getDate() < tr.getDate()) {
+			return 1;
 		}
 		return 0;
 	}

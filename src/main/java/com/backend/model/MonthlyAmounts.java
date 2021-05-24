@@ -1,6 +1,7 @@
 package com.backend.model;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.TreeSet;
 
 import org.apache.log4j.Logger;
@@ -33,7 +34,13 @@ public class MonthlyAmounts {
 		
 	}
 	
-	public NetAmount latestMonth() {		
+	public NetAmount[] getAllMonths() {
+		return this.monthlyNetAmounts.toArray(new NetAmount[0]);
+	}
+	
+	public NetAmount latestMonth() {	
+		if(monthlyNetAmounts.isEmpty())
+			return dummyMonth;
 		log.debug("First "+ monthlyNetAmounts.first().getYear()+" "+monthlyNetAmounts.first().getMonth());
 		log.debug("First "+ monthlyNetAmounts.last().getYear()+" "+monthlyNetAmounts.last().getMonth());
 		return monthlyNetAmounts.first();
@@ -43,6 +50,14 @@ public class MonthlyAmounts {
 		dummyMonth.year = yr;
 		dummyMonth.month = month;
 		return monthlyNetAmounts.contains(dummyMonth);
+	}
+	
+	public NetAmount getNetAmount(int yr,int month) {
+		if(isPresent(yr,month))
+			return monthlyNetAmounts.ceiling(dummyMonth);
+		NetAmount thisMonth = new NetAmount(yr,month);
+		monthlyNetAmounts.add(thisMonth);
+		return thisMonth;
 	}
 	
 	public void print() {

@@ -12,7 +12,7 @@ import com.backend.model.User;
 
 public class Main {
 	public static void main(String[] args) {
-		ManagerService app = new ManagerService();
+		ManagerService app = ManagerService.getInstance();
 		User user = app.createNewUser("madhu@gmail.com", "8686156086", "pass");
 		//System.out.print("sdfsdf");
 		user.addTransaction(new Transaction("ECG",TransactionType.INCOME, TransactionCategory.JOB, PaymentMode.NET_BANKING,12345.0,"Monthly Pay" ));

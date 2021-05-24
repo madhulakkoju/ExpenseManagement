@@ -1,0 +1,595 @@
+2021-05-22 19:20:16,771 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:20:16,813 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:16,818 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:16,886 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:16,888 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:17,075 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:20:17,076 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:20:17,076 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:20:17,079 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:20:17,081 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:20:17,082 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:20:24,912 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:20:24,962 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:24,977 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:25,042 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:25,044 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:20:25,058 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:20:25,058 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:20:25,059 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:20:25,063 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:20:25,066 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:20:25,066 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:21:33,549 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:23:59,319 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:23:59,358 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:23:59,364 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:23:59,420 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:23:59,424 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:23:59,441 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:23:59,441 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:23:59,442 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:23:59,446 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:23:59,449 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:23:59,449 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:27:33,135 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:27:33,174 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:27:33,179 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:27:33,234 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:27:33,236 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:27:33,248 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:27:33,249 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:27:33,249 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:27:33,252 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:27:33,255 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:27:33,255 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:35:12,440 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:35:12,479 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:35:12,484 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:35:12,536 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:35:12,538 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:35:12,554 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:35:12,555 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:35:12,555 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:35:12,559 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:35:12,561 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:35:12,562 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:36:38,767 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:36:38,807 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:36:38,812 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:36:38,863 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:36:38,865 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:36:38,878 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:36:38,878 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:36:38,878 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:36:38,883 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:36:38,888 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:36:38,888 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:37:01,460 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:37:01,500 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:37:01,505 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:37:01,556 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:37:01,558 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:37:01,568 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:37:01,569 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:37:01,569 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:37:01,572 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:37:01,575 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:37:01,575 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:38:06,942 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/ 
+2021-05-22 19:38:06,972 DEBUG :org.jboss.resteasy.core.ExceptionHandler [handleException] RESTEASY002305: Failed executing POST /loginService/ 
+javax.ws.rs.NotSupportedException: RESTEASY003065: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:494)
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:175)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:47)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:449)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:300)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:221)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:135)
+	at org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:358)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:138)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:215)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:245)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:61)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:363)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:169)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-22 19:38:18,300 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/ 
+2021-05-22 19:38:18,301 DEBUG :org.jboss.resteasy.core.ExceptionHandler [handleException] RESTEASY002305: Failed executing POST /loginService/ 
+javax.ws.rs.NotSupportedException: RESTEASY003065: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:494)
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:175)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:47)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:449)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:300)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:221)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:135)
+	at org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:358)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:138)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:215)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:245)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:61)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:363)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:169)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-22 19:38:26,871 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/ 
+2021-05-22 19:38:26,872 DEBUG :org.jboss.resteasy.core.ExceptionHandler [handleException] RESTEASY002305: Failed executing POST /loginService/ 
+javax.ws.rs.NotSupportedException: RESTEASY003065: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:494)
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:175)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:47)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:449)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:300)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:221)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:135)
+	at org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:358)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:138)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:215)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:245)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:61)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:363)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:169)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-22 19:38:51,639 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/ 
+2021-05-22 19:38:51,640 DEBUG :org.jboss.resteasy.core.ExceptionHandler [handleException] RESTEASY002305: Failed executing POST /loginService/ 
+javax.ws.rs.NotSupportedException: RESTEASY003065: Cannot consume content type
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:494)
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:175)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:47)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:449)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:300)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:221)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:135)
+	at org.jboss.resteasy.core.interception.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:358)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:138)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:215)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:245)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:61)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:363)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:169)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-22 19:40:14,296 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:40:14,335 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:40:14,340 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:40:14,390 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:40:14,391 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:40:14,402 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:40:14,403 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:40:14,403 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:40:14,406 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:40:14,409 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:40:14,409 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:40:19,976 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/ 
+2021-05-22 19:40:29,309 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/ 
+2021-05-22 19:41:52,272 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/ 
+2021-05-22 19:51:59,825 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:00,944 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:01,654 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:02,267 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:02,730 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:03,138 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:03,363 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:03,556 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:03,726 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:03,881 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:04,252 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:04,452 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:04,669 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:04,830 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:51,307 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:52,882 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:53,723 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:52:54,242 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:53:14,270 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:53:35,543 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:54:15,896 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:58:44,693 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 19:58:44,731 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:58:44,736 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:58:44,784 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:58:44,786 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 19:58:44,796 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 19:58:44,796 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 19:58:44,796 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 19:58:44,800 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:58:44,802 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:58:44,802 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 19:59:47,311 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService 
+2021-05-22 19:59:47,318 WARN :org.jboss.resteasy.core.registry.SegmentNode [match] RESTEASY002142: Multiple resource methods match request "POST /loginService". Selecting one. Matching methods: [public javax.ws.rs.core.Response com.backend.service.LoginService.authenticateUser(java.lang.String,java.lang.String), public javax.ws.rs.core.Response com.backend.service.LoginService.authenticate(java.lang.String,java.lang.String)] 
+2021-05-22 20:00:32,188 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 20:00:32,227 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:00:32,233 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:00:32,285 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:00:32,287 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:00:32,299 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 20:00:32,299 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 20:00:32,299 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 20:00:32,304 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:00:32,307 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:00:32,307 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:00:43,603 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:01:22,386 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:01:26,707 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 20:01:26,744 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:01:26,749 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:01:26,800 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:01:26,801 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:01:26,812 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 20:01:26,812 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 20:01:26,812 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 20:01:26,816 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:01:26,819 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:01:26,819 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:01:31,237 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:03:56,856 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-22 20:03:56,898 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:03:56,903 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:03:56,953 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:03:56,954 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-22 20:03:56,965 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-22 20:03:56,965 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-22 20:03:56,966 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-22 20:03:56,969 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:03:56,972 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:03:56,972 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-22 20:04:01,448 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:04:24,595 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:05:26,638 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:05:35,031 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:05:46,602 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:06:17,135 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:06:27,386 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:18:50,502 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:19:16,211 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:32:54,104 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:33:03,478 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:33:24,907 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:34:23,919 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:36:21,495 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:37:00,911 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:37:03,553 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:37:04,087 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:37:04,240 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:37:07,928 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:37:18,036 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:47:49,623 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:48:26,027 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:49:38,773 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-22 20:50:13,631 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 17:56:42,490 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 17:56:55,437 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:04:18,959 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:08:00,539 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:08:09,501 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:09:04,624 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:10:37,431 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:15:30,107 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:18:08,011 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:26:25,664 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:31:12,934 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu2@gmail.com 
+2021-05-23 18:31:16,532 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:31:16,532 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:31:16,532 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:31:16,572 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:31:16,573 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:31:16,573 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:35:42,051 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu2@gmail.com 
+2021-05-23 18:35:42,113 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:35:42,113 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:35:42,113 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:35:42,114 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:35:42,114 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:35:42,114 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:35:56,951 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:36:30,339 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:36:30,361 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:36:30,370 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:36:30,370 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:36:30,371 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:36:30,372 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:36:30,372 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:36:30,373 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:39:35,122 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:39:35,139 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:39:35,144 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:39:35,144 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:39:35,144 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:39:35,145 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:39:35,145 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:39:35,145 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:40:59,412 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:40:59,420 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:40:59,426 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:40:59,427 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:40:59,428 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:40:59,428 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:40:59,429 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:40:59,429 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:41:37,008 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:41:37,015 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:41:37,020 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:41:37,021 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:41:37,021 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:41:37,021 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:41:37,021 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:41:37,022 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:41:43,907 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:41:43,934 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:41:43,940 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:41:43,941 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:41:43,941 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:41:43,942 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:41:43,942 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:41:43,943 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:42:09,465 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:42:09,473 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:42:09,478 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:42:09,478 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:42:09,479 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:42:09,479 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:42:09,479 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:42:09,480 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:48:34,520 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:48:34,528 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:48:34,729 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:48:34,730 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:48:34,730 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:48:34,730 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:48:34,731 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:48:34,731 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:49:02,763 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 18:49:02,772 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 18:49:02,778 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:49:02,779 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:49:02,779 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:49:02,780 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 18:49:02,780 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 18:49:02,781 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 18:51:53,735 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-23 18:51:53,739 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-23 18:51:53,739 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-23 18:51:53,834 DEBUG :com.backend.model.RecurringExpenses [<init>] Created Recurring Expense repayPinky1 
+2021-05-23 18:51:53,836 DEBUG :com.backend.model.User [<init>] New User Created madhu123@gmail.com 
+2021-05-23 18:51:53,836 DEBUG :com.backend.impl.UserImpl [print] -----------------ALL USERS-------------- 
+2021-05-23 18:51:53,836 DEBUG :com.backend.model.User [print] --------------------USER--------------- 
+2021-05-23 18:51:53,837 DEBUG :com.backend.model.User [print] madhu123@gmail.com Madhu Lakkoju 8686156086 
+2021-05-23 18:51:53,837 DEBUG :com.backend.model.MonthlyAmounts [print] ---------------MONTHLY NET AMOUNTS---------------- 
+2021-05-23 18:51:53,875 DEBUG :com.backend.model.NetAmount [print] 2021 5 12345.0 0.0 12345.0 
+2021-05-23 18:51:53,875 DEBUG :com.backend.model.NetAmount [print] 2020 6 5000.0 500.0 4500.0 
+2021-05-23 18:51:53,875 DEBUG :com.backend.model.NetAmount [print] 2020 5 5000.0 500.0 4500.0 
+2021-05-23 18:51:53,876 DEBUG :com.backend.model.MonthlyAmounts [print] MONTHLY NET DONE 
+2021-05-23 18:51:53,876 DEBUG :com.backend.model.Transaction [print] TRANSACT [12, 5, 2020] 5000.0 HOME SERVICES INCOME CASH Help 
+2021-05-23 18:51:53,876 DEBUG :com.backend.model.Transaction [print] TRANSACT [12, 6, 2020] 5000.0 BAB JOB INCOME NET_BANKING Month Pay 
+2021-05-23 18:51:53,876 DEBUG :com.backend.model.Transaction [print] TRANSACT [23, 5, 2021] 12345.0 BAB JOB INCOME NET_BANKING Pay 
+2021-05-23 18:51:53,879 DEBUG :com.backend.model.User [print] Active Recurring expenses 
+2021-05-23 18:51:53,879 DEBUG :com.backend.model.User [print] Closed Recurring Expenses 
+2021-05-23 18:51:53,879 DEBUG :com.backend.model.User [print] ------------------------DONE USER------------- 
+2021-05-23 18:51:53,879 DEBUG :com.backend.model.User [print] --------------------USER--------------- 
+2021-05-23 18:51:53,880 DEBUG :com.backend.model.User [print] madhu@gmail.com madhu 8686156086 
+2021-05-23 18:51:53,880 DEBUG :com.backend.model.MonthlyAmounts [print] ---------------MONTHLY NET AMOUNTS---------------- 
+2021-05-23 18:51:53,880 DEBUG :com.backend.model.NetAmount [print] 2021 5 12345.0 1000.0 11345.0 
+2021-05-23 18:51:53,880 DEBUG :com.backend.model.NetAmount [print] 2021 3 0.0 1000.0 -1000.0 
+2021-05-23 18:51:53,880 DEBUG :com.backend.model.NetAmount [print] 2021 2 0.0 1000.0 -1000.0 
+2021-05-23 18:51:53,881 DEBUG :com.backend.model.NetAmount [print] 2021 1 0.0 2000.0 -2000.0 
+2021-05-23 18:51:53,881 DEBUG :com.backend.model.NetAmount [print] 2020 6 5000.0 500.0 4500.0 
+2021-05-23 18:51:53,881 DEBUG :com.backend.model.NetAmount [print] 2020 5 5000.0 500.0 4500.0 
+2021-05-23 18:51:53,881 DEBUG :com.backend.model.MonthlyAmounts [print] MONTHLY NET DONE 
+2021-05-23 18:51:53,881 DEBUG :com.backend.model.Transaction [print] TRANSACT [12, 5, 2020] 5000.0 ECG JOB INCOME NET_BANKING Month- Pay 
+2021-05-23 18:51:53,882 DEBUG :com.backend.model.Transaction [print] TRANSACT [12, 6, 2020] 5000.0 ECG JOB INCOME NET_BANKING Periodic Pay 
+2021-05-23 18:51:53,882 DEBUG :com.backend.model.Transaction [print] TRANSACT [11, 1, 2021] 1000.0 pinky SERVICES INTEREST CASH paid 
+2021-05-23 18:51:53,882 DEBUG :com.backend.model.Transaction [print] TRANSACT [11, 2, 2021] 1000.0 pinky SERVICES INTEREST CASH paid 
+2021-05-23 18:51:53,882 DEBUG :com.backend.model.Transaction [print] TRANSACT [11, 3, 2021] 1000.0 pinky SERVICES INTEREST CASH paid 
+2021-05-23 18:51:53,882 DEBUG :com.backend.model.Transaction [print] TRANSACT [23, 5, 2021] 12345.0 ECG JOB INCOME NET_BANKING Monthly Pay 
+2021-05-23 18:51:53,883 DEBUG :com.backend.model.User [print] Active Recurring expenses 
+2021-05-23 18:51:53,883 DEBUG :com.backend.model.RecurringExpenses [print] Recurring Expense : repayPinky1 
+2021-05-23 18:51:53,883 DEBUG :com.backend.model.Transaction [print] TRANSACT [11, 1, 2021] 1000.0 pinky SERVICES INTEREST CASH paid 
+2021-05-23 18:51:53,883 DEBUG :com.backend.model.Transaction [print] TRANSACT [11, 2, 2021] 1000.0 pinky SERVICES INTEREST CASH paid 
+2021-05-23 18:51:53,884 DEBUG :com.backend.model.Transaction [print] TRANSACT [11, 3, 2021] 1000.0 pinky SERVICES INTEREST CASH paid 
+2021-05-23 18:51:53,884 DEBUG :com.backend.model.Transaction [print] TRANSACT [23, 5, 2021] 1000.0 pinky SERVICES INTEREST CASH paid 
+2021-05-23 18:51:53,884 DEBUG :com.backend.model.User [print] Closed Recurring Expenses 
+2021-05-23 18:51:53,884 DEBUG :com.backend.model.User [print] ------------------------DONE USER------------- 
+2021-05-23 18:51:53,885 DEBUG :com.backend.model.User [print] --------------------USER--------------- 
+2021-05-23 18:51:53,885 DEBUG :com.backend.model.User [print] madhu2@gmail.com madhu_2 8686156088 
+2021-05-23 18:51:53,885 DEBUG :com.backend.model.MonthlyAmounts [print] ---------------MONTHLY NET AMOUNTS---------------- 
+2021-05-23 18:51:53,885 DEBUG :com.backend.model.MonthlyAmounts [print] MONTHLY NET DONE 
+2021-05-23 18:51:53,885 DEBUG :com.backend.model.User [print] Active Recurring expenses 
+2021-05-23 18:51:53,885 DEBUG :com.backend.model.User [print] Closed Recurring Expenses 
+2021-05-23 18:51:53,886 DEBUG :com.backend.model.User [print] ------------------------DONE USER------------- 
+2021-05-23 18:51:53,886 DEBUG :com.backend.model.User [print] --------------------USER--------------- 
+2021-05-23 18:51:53,886 DEBUG :com.backend.model.User [print] madhu1@gmail.com madhu_1 8686156087 
+2021-05-23 18:51:53,886 DEBUG :com.backend.model.MonthlyAmounts [print] ---------------MONTHLY NET AMOUNTS---------------- 
+2021-05-23 18:51:53,886 DEBUG :com.backend.model.MonthlyAmounts [print] MONTHLY NET DONE 
+2021-05-23 18:51:53,887 DEBUG :com.backend.model.User [print] Active Recurring expenses 
+2021-05-23 18:51:53,887 DEBUG :com.backend.model.User [print] Closed Recurring Expenses 
+2021-05-23 18:51:53,887 DEBUG :com.backend.model.User [print] ------------------------DONE USER------------- 
+2021-05-23 18:51:53,887 DEBUG :com.backend.impl.UserImpl [print] ---------------DONE USERS--------------- 
+2021-05-23 18:51:53,887 DEBUG :com.backend.impl.LoginImpl [print] --------------------LOGINS-------------- 
+2021-05-23 18:51:53,887 DEBUG :com.backend.model.LoginDetails [print] Email : madhu123@gmail.com password : pass 
+2021-05-23 18:51:53,888 DEBUG :com.backend.model.LoginDetails [print] Email : madhu@gmail.com password : madhuPassword 
+2021-05-23 18:51:53,888 DEBUG :com.backend.model.LoginDetails [print] Email : madhu2@gmail.com password : madhu2Password 
+2021-05-23 18:51:53,888 DEBUG :com.backend.model.LoginDetails [print] Email : madhu1@gmail.com password : madhu1Password 
+2021-05-23 19:07:50,510 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-23 19:07:50,553 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:07:50,577 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:07:50,634 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:07:50,636 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:07:50,647 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-23 19:07:50,647 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-23 19:07:50,647 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-23 19:07:50,670 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:07:50,673 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:07:50,674 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:08:11,800 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 19:08:11,858 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 19:08:13,868 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:08:13,869 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:08:13,870 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:08:13,874 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 19:08:13,875 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:08:13,875 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:10:23,762 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-23 19:10:23,838 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:10:23,843 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:10:23,926 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:10:23,928 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:10:23,949 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-23 19:10:23,949 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-23 19:10:23,950 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-23 19:10:23,961 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:10:23,964 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:10:23,964 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:10:52,826 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 19:10:52,870 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 19:10:53,718 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:10:53,718 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:10:53,718 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:10:53,720 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 19:10:53,721 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:10:53,721 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:14:14,291 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 19:14:14,298 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 19:14:14,309 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:14:14,309 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:14:14,310 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:14:14,310 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 19:14:14,310 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:14:14,311 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:16:29,987 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 19:16:29,996 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 19:16:30,007 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:16:30,007 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:16:30,008 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:16:30,009 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 19:16:30,009 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:16:30,009 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:18:09,284 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 19:18:09,292 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 19:18:09,300 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:18:09,300 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:18:09,301 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:18:09,301 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 19:18:09,301 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:18:09,302 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:19:03,622 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-23 19:19:03,631 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-23 19:19:03,638 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:19:03,639 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:19:03,639 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:19:03,639 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-23 19:19:03,640 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-23 19:19:03,640 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-23 19:49:37,960 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-23 19:49:37,999 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:49:38,004 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:49:38,054 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:49:38,055 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-23 19:49:38,065 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-23 19:49:38,065 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-23 19:49:38,065 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-23 19:49:38,076 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:49:38,078 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-23 19:49:38,079 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 

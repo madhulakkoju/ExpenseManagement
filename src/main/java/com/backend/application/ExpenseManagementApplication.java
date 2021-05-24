@@ -6,6 +6,7 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
+import com.backend.service.LoginService;
 import com.backend.service.ManagerService;
 
 
@@ -20,7 +21,8 @@ public class ExpenseManagementApplication extends Application
 	{
 		// This is initial creation of application. 
 		// So, add all the resources to the set.
-		singletons.add(new ManagerService());
+		singletons.add(ManagerService.getInstance());
+		singletons.add(new LoginService());
 	}
 	
 	@Override

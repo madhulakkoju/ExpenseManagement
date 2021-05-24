@@ -111,8 +111,30 @@ public class User implements Serializable {
 		return recurringExpenses.toArray(new RecurringExpenses[0]);
 	}
 	
+	
+	
+	public TreeSet<RecurringExpenses> getRecurringExpenses() {
+		return recurringExpenses;
+	}
+
+	public MonthlyAmounts getMonthly() {
+		return monthly;
+	}
+
+	public NetAmount getCurrentMonth() {
+		return currentMonth;
+	}
+
 	public RecurringExpenses getRecurringExpense(String name) {
 		for(RecurringExpenses exp: recurringExpenses.toArray(new RecurringExpenses[0])) {
+			if(exp.getName().equals(name))
+				return exp;
+		}
+		return null;
+	}
+	
+	public RecurringExpenses getClosedRecurringExpense(String name) {
+		for(RecurringExpenses exp: closedRecurringExpenses.toArray(new RecurringExpenses[0])) {
 			if(exp.getName().equals(name))
 				return exp;
 		}
@@ -134,6 +156,27 @@ public class User implements Serializable {
 		this.closedRecurringExpenses.add(exp);
 		return exp;
 	}
+	
+	public Transaction[] getCurrentMonthTransactions() {
+		Transaction t = new Transaction();
+		return transactions.tailSet(t, true).toArray(new Transaction[0]);
+	}
+	
+	public Transaction[] getMonthTransactions(int month,int year) {
+		Transaction t = new Transaction(month,year);
+		return transactions.tailSet(t, true).toArray(new Transaction[0]);
+	}
+	
+	public Transaction[] getCurrentYearTransactions() {
+		String[] dt = Utilities.dateFormat.format(new Date()).split("-");
+		Transaction t = new Transaction(0,Integer.parseInt(dt[2]));
+		return transactions.tailSet(t, true).toArray(new Transaction[0]);
+	}
+	
+	public Transaction[] getYearTransactions(int year) {
+		return transactions.subSet(new Transaction(year), new Transaction(year+1)).toArray(new Transaction[0]);
+	}
+	
 	
 	public void print() {
 		log.debug("--------------------USER---------------");
