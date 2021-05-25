@@ -6,6 +6,8 @@ import java.util.Date;
 import java.util.Set;
 import java.util.TreeSet;
 
+import javax.persistence.Id;
+
 import org.apache.log4j.Logger;
 
 import com.backend.util.Utilities;
@@ -16,7 +18,7 @@ public class User implements Serializable {
 	private static final long serialVersionUID = -7696472153609164923L;
 
 	private static Logger log = Logger.getLogger(User.class);
-
+	@Id
 	String email;
 	String name;
 	String mobile;
@@ -111,8 +113,6 @@ public class User implements Serializable {
 		return recurringExpenses.toArray(new RecurringExpenses[0]);
 	}
 	
-	
-	
 	public TreeSet<RecurringExpenses> getRecurringExpenses() {
 		return recurringExpenses;
 	}
@@ -133,6 +133,14 @@ public class User implements Serializable {
 		return null;
 	}
 	
+	public RecurringExpenses getRecurringExpense(long id) {
+		for(RecurringExpenses exp: recurringExpenses.toArray(new RecurringExpenses[0])) {
+			if(exp.getId()==id)
+				return exp;
+		}
+		return null;
+	}
+	
 	public RecurringExpenses getClosedRecurringExpense(String name) {
 		for(RecurringExpenses exp: closedRecurringExpenses.toArray(new RecurringExpenses[0])) {
 			if(exp.getName().equals(name))
@@ -144,6 +152,10 @@ public class User implements Serializable {
 	public RecurringExpenses addRecurringExpense(RecurringExpenses exp) {
 		recurringExpenses.add(exp);
 		return exp;
+	}
+	
+	public Transaction getTransaction(long id) {
+		return transactions.ceiling( new Transaction(id) );
 	}
 	
 	public RecurringExpenses[] getClosedRecurringExpenses() {
@@ -195,6 +207,12 @@ public class User implements Serializable {
 			exp.print();
 		}
 		log.debug("------------------------DONE USER-------------");
+	}
+
+	public void closeRecurringExpense(long id) {
+		RecurringExpenses rec = this.getRecurringExpense(id);
+		this.recurringExpenses.remove(rec);
+		this.closedRecurringExpenses.add(rec);
 	}
 	
 }

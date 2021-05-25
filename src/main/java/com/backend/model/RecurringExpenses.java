@@ -3,16 +3,25 @@ package com.backend.model;
 import java.util.Date;
 import java.util.TreeSet;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import org.apache.log4j.Logger;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 import com.backend.util.Utilities;
 
 public class RecurringExpenses implements Comparable<RecurringExpenses> {
 	private static Logger log = Logger.getLogger(RecurringExpenses.class);
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	private Long id;
 	
 	String name;
 	int periodicity;
 	String participant;
+	
 	TreeSet<Transaction> transactions;
 	RecurringExpenseCategory category;
 	RecurringExpenseType type;
@@ -36,11 +45,31 @@ public class RecurringExpenses implements Comparable<RecurringExpenses> {
 		this.creationDate[2] = Integer.parseInt(dt[2]);
 	}
 	
+	public RecurringExpenses(String name, int periodicity, String participant, String remarks) {
+		super();
+		this.name = name;
+		this.periodicity = periodicity;
+		this.participant = participant;
+		this.category = category;
+		this.type = type;
+		this.remarks = remarks;
+		transactions = new TreeSet<>();
+		log.debug("Created Recurring Expense "+this.name);
+		String[] dt = Utilities.dateFormat.format(new Date()).split("-");
+		this.creationDate = new int[3];
+		this.creationDate[0] = Integer.parseInt(dt[0]);
+		this.creationDate[1] = Integer.parseInt(dt[1]);
+		this.creationDate[2] = Integer.parseInt(dt[2]);
+	}
+	
+	
 	public void addTransaction(Transaction transaction) {
 		transactions.add(transaction);
 	}
 	
 	public Transaction getLatestTransaction() {
+		if(transactions.isEmpty())
+			return null;
 		return transactions.last();
 	}
 	
@@ -128,6 +157,18 @@ public class RecurringExpenses implements Comparable<RecurringExpenses> {
 		for(Transaction tr: this.getAllTransactions()) {
 			tr.print();
 		}
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setPeriodicity(int periodicity) {
+		this.periodicity = periodicity;		
+	}
+
+	public void setType(RecurringExpenseType type) {
+		this.type=type;
 	}
 	
 	
