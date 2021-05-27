@@ -99,7 +99,11 @@
         	<label><b>User Email</b></label><br><input type="text" name="userEmail" id="userEmail" placeholder="Email"><br><br>
         	<label><b>Password</b></label><br><input type="password" name="password" id="password" placeholder="Password"><br><br>
         	<button type="submit" onclick="loginSupport()">Login</button>
-    		</div>`;
+    		</div>
+            
+            
+            
+            `;
         var homePageHtml = `
             <div style="display:flex">
                 <div  id="sidePane" class="flex-child magenta" style="margin-right: 150px;" >
@@ -151,10 +155,66 @@
             <label><b>Password</b></label><br><input type="password" name="password" id="password" placeholder="Password"><br><br>
             <button type="submit" onclick="loginSupport()">Login</button>
         </div>
+        <div class="signup">
+                <label><b>User Email</b></label><br><input type="text" name="userEmail" id="SuserEmail" placeholder="Email"><br><br>
+                <label><b>Name</b></label><br><input type="text" name="name" id="Sname" placeholder="Name"><br><br>
+        	    <label><b>Mobile</b></label><br><input type="number" name="mobile" id="Smobile" placeholder="Mobile"><br><br>
+        	
+        	    <label><b>Password</b></label><br><input type="password" name="password" id="Spassword" placeholder="Password"><br><br>
+        	    <button type="submit" onclick="signupSupport()">Login</button>
+            </div>
     </div>
 </body>
 
 <script>
+
+    async function signupSupport(){
+        var name = document.getElementById("Sname").value;
+        if(name==""){
+            alert("Name Field Mandatory");
+            return;
+        }         
+        var email = document.getElementById("SuserEmail").value;
+        if(email==""){
+            alert("Email field Mandatory");
+            return;
+        }
+        var mobile = document.getElementById("Smobile").value;
+        if(mobile==""){
+            alert("Mobile field Mandatory");
+            return;
+        }
+        var pass = document.getElementById("Spassword").value;
+        if(pass==""){
+            alert("Password field Mandatory");
+            return;
+        }
+        let response = await fetch("http://localhost:8080/ExpenseManagement/app/manager/sign-up", { 
+            method: "POST",
+            body: JSON.stringify(
+                { email: userEmail, password: password }
+            ),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "email": email,
+                "password": pass,
+                "mobile" : mobile,
+                "name":name
+            }
+        });
+        console.log(response);
+        if(response.status==200){
+            userEmailCurrent = email;
+            console.log("authed");
+            homePageRender();
+            updateUserObject(email);
+        }
+        else{
+            alert("Credentials Already present");
+            console.log(email);
+        }
+    }
+
     function loginPageRender() {
         document.getElementById("page").innerHTML = loginHtml;
     }

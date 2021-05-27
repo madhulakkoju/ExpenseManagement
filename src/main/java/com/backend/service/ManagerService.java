@@ -11,6 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -27,9 +28,11 @@ import com.backend.model.TransactionCategory;
 import com.backend.model.TransactionType;
 import com.backend.model.User;
 
+import jdk.internal.org.jline.utils.Log;
+
 @Path(value = "manager")
 public class ManagerService {
-
+	private static Logger log = Logger.getLogger(ManagerService.class);
 	UserImpl users;
 	LoginImpl logins;
 
@@ -175,6 +178,11 @@ public class ManagerService {
 	@Path(value="/sign-up")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response signUpUser( @HeaderParam("email") String email, @HeaderParam("name") String name, @HeaderParam("mobile") String mobile, @HeaderParam("password") String password) throws JsonGenerationException, JsonMappingException, IOException{
+		
+		if(this.users.getUser(email) != null) {
+			log.debug(this.users.getUser(email));
+			return Response.status(500, "already-signed-up").build();
+		}
 		User createdUser = this.createNewUser(email, name, mobile, password);
 		ObjectMapper mapper = new ObjectMapper();
 		return Response.ok(mapper.writeValueAsString(createdUser)).build();
