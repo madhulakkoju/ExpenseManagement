@@ -18,6 +18,7 @@ public class LoginImpl {
 		logins.put("madhu@gmail.com", new LoginDetails("madhu@gmail.com","madhuPassword"));
 		logins.put("madhu1@gmail.com", new LoginDetails("madhu1@gmail.com","madhu1Password"));
 		logins.put("madhu2@gmail.com", new LoginDetails("madhu2@gmail.com","madhu2Password"));
+		logins.put("ADMIN_USER", new LoginDetails("ADMIN_USER","ADMIN_USER"));
 	}
 	
 	public static LoginImpl getObject() {

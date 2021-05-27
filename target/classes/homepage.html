@@ -100,46 +100,7 @@
         	<label><b>Password</b></label><br><input type="password" name="password" id="password" placeholder="Password"><br><br>
         	<button type="submit" onclick="loginSupport()">Login</button>
     		</div>
-            
-            
-            
             `;
-        var homePageHtml = `
-            <div style="display:flex">
-                <div  id="sidePane" class="flex-child magenta" style="margin-right: 150px;" >
-                    <table id = "optionsAvailable" >
-                        <tr><h2>MENU</h2></tr>
-                    	<tr><td onClick="makeProfilePage()"> Profile </td></tr>
-
-                        <tr><td onClick="addTransactionPage()"> Add Transaction </td></tr>
-                        <tr><td onClick="searchTransactionPage()"> Search Transaction </td></tr>
-                        <tr><td onClick="allTransactionsPage()"> All Transactions </td></tr>
-
-                        <tr><td onClick="addIncomePage()"> Add Income </td></tr>
-                        <tr><td onClick="addExpensePage()"> Add Expense </td></tr>
-
-                        <tr><td onClick="searchMonthlyExpensePage()"> Search Monthly Expenses </td></tr>
-                        <tr><td onClick="allMonthlyExpensePage()"> All Monthly Expenses </td></tr>
-
-                        <tr><td onClick="createRecurringExpensePage()"> Create New Recurring Expense </td></tr>
-                        <tr><td onClick="closeRecurringExpensePage()"> Close Recurring Expense </td></tr>
-                        
-                        <tr><td onClick="addTransactionToRecurringExpensePage()"> Add Transaction to Recurring Expense </td></tr>
-
-                        <tr><td onClick="allActiveRecurringExpensesPage()"> All Active Recurring Expenses </td></tr>
-                        <tr><td onClick="allClosedRecurringExpensesPage()"> All Closed Recurring Expenses </td></tr>
-                        <tr><td onClick="allRecurringExpensesPage()"> All Recurring Expenses </td></tr>
-                        
-                        <tr><td onClick="logOut()"> Log Out </td></tr>
-                    </table>
-                </div>
-                <div class="flex-child green" style="flex: 1;border: 2px solid yellow;">
-                    <div id="contentPart" class="blue" style="overflow-y:scroll;overflow-x:hidden;height:500px">
-                        Welcome
-                    </div>
-                </div>
-            </div>`;
-		
     </script>
 
     <meta charset="ISO-8859-1">
@@ -238,8 +199,8 @@
         if (response.ok) {
         	userEmailCurrent = userEmail;
             console.log("authed");
-            homePageRender();
             updateUserObject(userEmail);
+            homePageRender(userEmail);
         }
     }
 
@@ -252,10 +213,47 @@
             }).then(currUser => currUser.json());
             console.log(currUser);
             currentUserObject = currUser;
+
+            sessionStorage.setItem("email",userEmail);
     }
 
-    function homePageRender() {
-        document.getElementById("page").innerHTML = homePageHtml;
+    function homePageRender(mail) {
+        document.getElementById("page").innerHTML = `
+            <div style="display:flex">
+                <div  id="sidePane" class="flex-child magenta" style="margin-right: 150px;" >
+                    <table id = "optionsAvailable" >
+                        <tr><h2>MENU</h2></tr>
+                    	<tr><td onClick="makeProfilePage()"> Profile </td></tr>
+
+                        <tr><td onClick="addTransactionPage()"> Add Transaction </td></tr>
+                        <tr><td onClick="searchTransactionPage()"> Search Transaction </td></tr>
+                        <tr><td onClick="allTransactionsPage()"> All Transactions </td></tr>
+
+                        <tr><td onClick="addIncomePage()"> Add Income </td></tr>
+                        <tr><td onClick="addExpensePage()"> Add Expense </td></tr>
+
+                        <tr><td onClick="searchMonthlyExpensePage()"> Search Monthly Expenses </td></tr>
+                        <tr><td onClick="allMonthlyExpensePage()"> All Monthly Expenses </td></tr>
+
+                        <tr><td onClick="createRecurringExpensePage()"> Create New Recurring Expense </td></tr>
+                        <tr><td onClick="closeRecurringExpensePage()"> Close Recurring Expense </td></tr>
+                        
+                        <tr><td onClick="addTransactionToRecurringExpensePage()"> Add Transaction to Recurring Expense </td></tr>
+
+                        <tr><td onClick="allActiveRecurringExpensesPage()"> All Active Recurring Expenses </td></tr>
+                        <tr><td onClick="allClosedRecurringExpensesPage()"> All Closed Recurring Expenses </td></tr>
+                        <tr><td onClick="allRecurringExpensesPage()"> All Recurring Expenses </td></tr>
+                        
+                        <tr><td onClick="logOut()"> Log Out </td></tr>
+                        <tr><td><form action="/ExpenseManagement/MessagePageController"> <input type="hidden" value="${mail}" name="email" id="email"> <input type="submit" value="Help Chat"></form></td></tr>
+                    </table>
+                </div>
+                <div class="flex-child green" style="flex: 1;border: 2px solid yellow;">
+                    <div id="contentPart" class="blue" style="overflow-y:scroll;overflow-x:hidden;height:500px">
+                        Welcome
+                    </div>
+                </div>
+            </div>`;
     }
 
     async function makeProfilePage(){
@@ -727,6 +725,7 @@
         	transaction["date"] = curr.getDate();
         	transaction["month"] = curr.getMonth()+1;
         	transaction["year"] = curr.getFullYear();
+            console.log(transaction.date);
         }
         else{
         	var curr = document.getElementById("date").value.split("-");
@@ -789,9 +788,10 @@
             		"Content-type": "application/json; charset=UTF-8",
             	}
             }).then(activeRec => activeRec.json());
+        allActiveRec = activeRec;
         console.log(activeRec);
         document.getElementById("contentPart").innerHTML =`<h2>All Active Recurring Expenses</h2>`
-        + activeRec.map(rec=>{
+        + activeRec.map((rec,index)=>{
             var su = 0;
             var ex = 0;
             rec.allTransactions.map((trans)=>{
@@ -800,11 +800,37 @@
                 else 
                     ex = ex + trans.amount;
             });
-            return `<div class="recExpenseClass"> Id: ${rec.id} Name: ${rec.name} Participant: ${rec.participant} <br>Category: ${rec.category} Type: ${rec.category} <br>Periodicity: ${rec.periodicity} <br> 
+            return `<div class="recExpenseClass" onclick=showRecFull(${index},${su},${ex})> Id: ${rec.id} Name: ${rec.name} Participant: ${rec.participant} <br>Category: ${rec.category} Type: ${rec.category} <br>Periodicity: ${rec.periodicity} <br> 
                 Net InFlow : ${su} <br>
                 Net OutFlow : ${ex}<br>
                 </div>`
         });
+    }
+
+    function showRecFull(index,su,ex){
+        var rec = allActiveRec[index];
+        var dat = new Date();
+        if(rec.allTransactions.length == 0){
+            dat = new Date(rec.creationDate[2],rec.creationDate[1]-1,rec.creationDate[0]);
+            dat.setMonth(dat.getMonth()+rec.periodicity+1);
+        }
+        else{
+            dat = new Date(rec.latestTransaction.dateOfTransaction[2],rec.latestTransaction.dateOfTransaction[1]-1,rec.latestTransaction.dateOfTransaction[0]);
+            dat.setMonth(dat.getMonth()+rec.periodicity);
+        }
+        document.getElementById("contentPart").innerHTML = `
+        <div class="recExpenseClass"> Id: ${rec.id} Name: ${rec.name} Participant: ${rec.participant} <br>Category: ${rec.category} Type: ${rec.type} <br>Periodicity: ${rec.periodicity} <br> 
+                Net InFlow : ${su} <br>
+                Net OutFlow : ${ex}<br>
+                Next Expected Due Date : ${dat.getFullYear()} - ${dat.getMonth()} - ${dat.getDate()} <br>
+                </div>
+                <center><h2>Related Transactions:</h2></center>
+        `+
+        rec.allTransactions.map(trans => {
+            return `<div class="transactionClass" onclick=showTransaction()>Participant ${trans.participant} <br>Type ${trans.type} <br>Category ${trans.category} <br>Mode ${trans.mode}  <br>Amount ${trans.amount}
+        		<br>Date of Transaction ${trans.dateOfTransaction}</div>
+        		<br>`
+        }).join(``);
     }
 
     async function allClosedRecurringExpensesPage(){
@@ -853,6 +879,7 @@
         var currentUserObject = null;
         loginPageRender();
     }
+
 
 </script>
 
