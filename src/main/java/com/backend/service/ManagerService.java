@@ -101,6 +101,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getAllRecurringExpenses())).build();
 	}
 
+	
 	@GET
 	@Path(value = "/{email}/all-closed-recurring-expenses")
 	@Produces(MediaType.APPLICATION_JSON)
