@@ -14,9 +14,10 @@ import com.backend.util.Utilities;
 
 public class RecurringExpenses implements Comparable<RecurringExpenses> {
 	private static Logger log = Logger.getLogger(RecurringExpenses.class);
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	private Long id;
+	private Long id= (long)0.0;
 	
 	String name;
 	int periodicity;

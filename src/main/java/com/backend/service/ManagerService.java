@@ -215,7 +215,8 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response createTransactionForRecExp(@PathParam("email") String email,@HeaderParam("rec-name") String recName, @HeaderParam("participant") String participant,@HeaderParam("date") int dd,@HeaderParam("month") int mm,@HeaderParam("year") int yy,@HeaderParam("type") TransactionType type,@HeaderParam("category") TransactionCategory category, @HeaderParam("mode") PaymentMode mode, @HeaderParam("amount") double amount, @HeaderParam("remarks") String remarks ) throws JsonGenerationException, JsonMappingException, IOException {
 		Transaction trans = new Transaction(participant,dd,mm,yy,type,category,mode,amount,remarks);
-		users.getUser(email).getRecurringExpense(recName).addTransaction(trans);
+		//users.getUser(email).getRecurringExpense(recName).addTransaction(trans);
+		users.getUser(email).addTransaction(trans, recName);
 		ObjectMapper mapper = new ObjectMapper();
 		return Response.ok(mapper.writeValueAsString(trans)).build();
 	}
@@ -259,7 +260,13 @@ public class ManagerService {
 		return Response.ok().build();
 	}
 	
-	
+	@PUT
+	@Path(value="/{email}/close-recurring-name/{name}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response closeRecurringExpense(@PathParam("email") String email, @PathParam("name") String name ) {
+		RecurringExpenses exp = users.getUser(email).closeRecurringExpense(name);
+		return Response.ok(exp).build();
+	}
 	
 	public User removeUser(String email) {
 		return users.removeUser(email);

@@ -20,7 +20,7 @@ public class Transaction implements Comparable<Transaction>, Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	private Long id= (long) 0.0;
+	private Long id = (long) 0;
 	
 	int[] dateOfTransaction; //date-month-yr
 	TransactionType type;
@@ -167,23 +167,15 @@ public class Transaction implements Comparable<Transaction>, Serializable {
 	
 	@Override
 	public int compareTo(Transaction tr) {
-		if(this.getYr() > tr.getYr())
-			return 1;
-		if(this.getYr() < tr.getYr())
-			return -1;
-		if(this.getMonth() > tr.getMonth())
-			return 1;
-		if(this.getMonth() < tr.getMonth())
-			return -1;
-		if(this.getDate() > tr.getDate())
-			return 1;
-		if(this.getDate() < tr.getDate())
-			return -1;
-		
-		return (int)(this.id - tr.getId());
+		return -1;
 	}
 	@Override
 	public boolean equals(Object obj) {
 		return false;
 	}
+
+	public String getParticipant() {
+		return participant;
+	}
+	
 }

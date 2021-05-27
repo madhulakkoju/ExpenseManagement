@@ -24,9 +24,7 @@ public class LoginService {
 	@POST
 	@Path(value="login/")
 	@Produces(MediaType.APPLICATION_JSON)
-
-	public Response authenticateUser( @HeaderParam("email") String email,
-									@HeaderParam("password") String password) {
+	public Response authenticateUser( @HeaderParam("email") String email, @HeaderParam("password") String password) {
 		System.out.println("called"+email+"  "+password);
 		
 		if(ManagerService.getInstance().authenticateUser(email, password))

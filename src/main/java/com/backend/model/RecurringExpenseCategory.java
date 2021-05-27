@@ -5,4 +5,5 @@ public enum RecurringExpenseCategory {
 	GROCERIES,
 	MEDICINES,
 	POWER_BILLS,
+	MISCELLANEOUS
 }

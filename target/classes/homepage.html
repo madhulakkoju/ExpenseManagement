@@ -2,21 +2,131 @@
 <html>
 
 <head>
+    <style>
+        h1 {color:blue}
+        div {background-color:beige}
+        
+        
+        #contentPart{
+        	background-color:beige;
+        }
+        #sidePane{
+        	background-color : bisque;
+        	background-color: aqua;
+        	border: 1px solid #c3c3c3;
+        	flex-wrap: wrap;
+  			align-content: center;
+  			box-sizing: border-box;
+  			align-items: center;
+  			text-decoration-style: solid;
+  			font-weight: bold;
+        }
+
+        td{
+        	padding-bottom: 10px;
+        	padding-right:10px;
+        	padding-left: 10px;
+        	padding-top: 10px;
+        }
+        .transactionClass{
+        	background-color: azure;
+        	border: 2px solid darkgreen;
+        	font: 15px Arial, sans-serif;
+        	padding-bottom: 25px;
+        	padding-right: 25px;
+        	padding-left: 25px;
+        	padding-top: 25px;            
+        }
+        .transactionClass:hover{
+            background-color:cyan;
+            zoom:150%;
+        }
+        .monthlyExpenseClass{
+            background-color: lightcyan;
+        	border: 2px solid crimson;
+        	font: 15px Arial, sans-serif;
+        	padding-bottom: 25px;
+        	padding-right: 25px;
+        	padding-left: 25px;
+        	padding-top: 25px;
+        }
+        .monthlyExpenseClass:hover{
+            background-color:cyan;
+            zoom:150%;
+        }
+        .recExpenseClass{
+            background-color: oldlace;
+        	border: 2px solid darkslateblue;
+        	font: 15px Arial, sans-serif;
+        	padding-bottom: 25px;
+        	padding-right: 25px;
+        	padding-left: 25px;
+        	padding-top: 25px;
+        }
+        .recExpenseClass:hover{
+            background-color:cyan;
+            zoom:150%;
+        }
+        .profileClass{
+            background-color: springgreen;
+        	border: 3px solid navy;
+        	font: 15px "Times New Roman", Times, serif;
+        	padding-bottom: 25px;
+        	padding-right: 25px;
+        	padding-left: 25px;
+        	padding-top: 25px;
+        	font-size: large;
+        	font-weight: bold;
+        }
+        .profileClass:hover{
+            background-color:cyan;
+            zoom:150%;
+        }
+
+        #sidePane tr:hover{
+            font-weight: bold;
+            font-size:large;
+        }
+
+      </style>
     <script>
+        var allTransUpdated = null;
+    	var userEmailCurrent = null;
         var currentUserObject = null;
+        var allActiveRec =null;
+        var loginHtml = `<center><h1>Login</h1></center>
+        	<div class="login">
+        	<label><b>User Email</b></label><br><input type="text" name="userEmail" id="userEmail" placeholder="Email"><br><br>
+        	<label><b>Password</b></label><br><input type="password" name="password" id="password" placeholder="Password"><br><br>
+        	<button type="submit" onclick="loginSupport()">Login</button>
+    		</div>`;
         var homePageHtml = `
-            <div class="flex-container" style="display:flex">
-                <div  id="sidePane" class="flex-child magenta" style="margin-right: 80px;" >
-                    <div class="green">Options Available</div>
-                    <table id = "optionsAvailable">
-                        <tr><td onClick="makeProfilePage()"> Profile </td></tr>
-                        <tr><td onClick="contentPageRender(1)"> Add Transaction </td></tr>
-                        <tr><td onClick="contentPageRender(2)"> Add Income </td></tr>
-                        <tr><td onClick="contentPageRender(3)"> Add Expense </td></tr>
-                        <tr><td onClick="contentPageRender(4)"> New Recurring Expense </td></tr>
-                        <tr><td onClick="contentPageRender(5)"> Close Recurring Expense </td></tr>
-                        <tr><td onClick="makeAllTransactionsPage()"> All Transactions </td></tr>
-                        <tr><td onClick="contentPageRender(7)"> Log Out </td></tr>
+            <div style="display:flex">
+                <div  id="sidePane" class="flex-child magenta" style="margin-right: 150px;" >
+                    <table id = "optionsAvailable" >
+                        <tr><h2>MENU</h2></tr>
+                    	<tr><td onClick="makeProfilePage()"> Profile </td></tr>
+
+                        <tr><td onClick="addTransactionPage()"> Add Transaction </td></tr>
+                        <tr><td onClick="searchTransactionPage()"> Search Transaction </td></tr>
+                        <tr><td onClick="allTransactionsPage()"> All Transactions </td></tr>
+
+                        <tr><td onClick="addIncomePage()"> Add Income </td></tr>
+                        <tr><td onClick="addExpensePage()"> Add Expense </td></tr>
+
+                        <tr><td onClick="searchMonthlyExpensePage()"> Search Monthly Expenses </td></tr>
+                        <tr><td onClick="allMonthlyExpensePage()"> All Monthly Expenses </td></tr>
+
+                        <tr><td onClick="createRecurringExpensePage()"> Create New Recurring Expense </td></tr>
+                        <tr><td onClick="closeRecurringExpensePage()"> Close Recurring Expense </td></tr>
+                        
+                        <tr><td onClick="addTransactionToRecurringExpensePage()"> Add Transaction to Recurring Expense </td></tr>
+
+                        <tr><td onClick="allActiveRecurringExpensesPage()"> All Active Recurring Expenses </td></tr>
+                        <tr><td onClick="allClosedRecurringExpensesPage()"> All Closed Recurring Expenses </td></tr>
+                        <tr><td onClick="allRecurringExpensesPage()"> All Recurring Expenses </td></tr>
+                        
+                        <tr><td onClick="logOut()"> Log Out </td></tr>
                     </table>
                 </div>
                 <div class="flex-child green" style="flex: 1;border: 2px solid yellow;">
@@ -48,11 +158,6 @@
     function loginPageRender() {
         document.getElementById("page").innerHTML = loginHtml;
     }
-    /*
-async function signupSupport(){
-	
-}
-*/
 
     async function loginSupport() {
         console.log("support called");
@@ -60,24 +165,26 @@ async function signupSupport(){
         var password = document.getElementById("password").value;
         let response = await fetch("http://localhost:8080/ExpenseManagement/app/loginService/login/", { // Adding method type
             method: "POST",
-            // Adding body or contents to send
             body: JSON.stringify(
                 { email: userEmail, password: password }
             ),
-            // Adding headers to the request
             headers: {
                 "Content-type": "application/json; charset=UTF-8",
                 "email": userEmail,
                 "password": password
             }
         });
-        // Converting to JSON
-        // .then(response => response.json());
         console.log(response);
         if (response.ok) {
+        	userEmailCurrent = userEmail;
             console.log("authed");
             homePageRender();
-            let currUser = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmail,{
+            updateUserObject(userEmail);
+        }
+    }
+
+    async function updateUserObject(userEmail){
+        let currUser = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent,{
             	method : "GET",
             	headers: {
             		"Content-type": "application/json; charset=UTF-8",
@@ -85,69 +192,607 @@ async function signupSupport(){
             }).then(currUser => currUser.json());
             console.log(currUser);
             currentUserObject = currUser;
-        }
     }
-
 
     function homePageRender() {
         document.getElementById("page").innerHTML = homePageHtml;
     }
 
-
-
-
-
-
-
-
-
-    function makeProfilePage(){
+    async function makeProfilePage(){
+        var dt = new Date();
+        var m = dt.getMonth()+1;
+        var y = dt.getFullYear();
+        let curMonth = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/net-month/"+m+"/"+y+"/",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(curMonth => curMonth.json());
+        console.log(curMonth);
         document.getElementById("contentPart").innerHTML = `
-            <h1>PROFILE</h1>
-            <h2>Email</h2> : ${currentUserObject.email} <br>
-            <h2>Mobile</h2> : ${currentUserObject.mobile}<br>
-            <h2>Name</h2> : ${currentUserObject.name}<br>
-            
+            <h2>PROFILE</h2>
+            <div class="profileClass">
+            <table>
+            <tr><td> Email</td> <td>:</td><td> ${currentUserObject.email}</td>
+            <tr><td>Mobile </td> <td>:</td><td> ${currentUserObject.mobile}</td>
+            <tr><td>Name </td> <td>: </td><td>${currentUserObject.name} </td>
+            </table>
+            <br>
+            </div>
+            <h2>This Month Statistics</h2>
+            <div class="monthlyExpenseClass">
+            Net Income : ${curMonth.income}<br>
+            Expenditure : ${curMonth.expenditure}<br>
+            Savings : ${curMonth.savings}<br>
+            </div>
             `;
     }
 
+    function addTransactionPage(){
+        document.getElementById("contentPart").innerHTML =`
+        <center>
+        	<h2>Add a New Transaction</h2>
+            From/To : <input type="text" id = "participant"><br>
+            Date:<input type="date" id = "date"><br>
+            Type : <select name="type" id="transactionType">
+                <option value="INCOME">Income</option>
+                <option value="EXPENSE">Expenses</option>
+                <option value="LOAN">LOAN Amount</option>
+                <option value="INTEREST">Interest</option>
+                </select><br>
+            Category:<select name="category" id="transactionCategory">
+                <option value="MISCELLANEOUS">Misc</option>
+                <option value="FOOD_BEVERAGES">Food & Beverages</option>
+                <option value="SERVICES">Services</option>
+                <option value="JOB">Job</option>
+                <option value="CLOTHING_APPAREL">Clothing</option>
+                </select><br>
+            Mode:<select name="mode" id="payMode">
+                <option value="CASH">Cash</option>
+                <option value="NET_BANKING">Net Banking</option>
+                <option value="UPI">UPI</option>
+                <option value="CARD">Card</option>
+                </select><br>
+            Amount:<input type="number" id = "amount"><br>
+            Remarks:<input type="text" id = "remarks"><br>
 
-    function makeAllTransactionsPage(){
+            <button type="submit" onclick="addNewTransaction()">Add</button>
+        </center>
+		`;
+    }
+
+    function addIncomePage(){
+        document.getElementById("contentPart").innerHTML =`
+        <center>
+        	<h2>Add a New INCOME</h2>
+            From/To : <input type="text" id = "participant"><br>
+            Date:<input type="date" id = "date"><br>
+            Type : <select name="type" id="transactionType">
+                <option value="INCOME">Income</option>
+                </select><br>
+            Category:<select name="category" id="transactionCategory">
+                <option value="MISCELLANEOUS">Misc</option>
+                <option value="FOOD_BEVERAGES">Food & Beverages</option>
+                <option value="SERVICES">Services</option>
+                <option value="JOB">Job</option>
+                <option value="CLOTHING_APPAREL">Clothing</option>
+                </select><br>
+            Mode:<select name="mode" id="payMode">
+                <option value="CASH">Cash</option>
+                <option value="NET_BANKING">Net Banking</option>
+                <option value="UPI">UPI</option>
+                <option value="CARD">Card</option>
+                </select><br> 
+            Amount:<input type="number" id = "amount"><br>
+            Remarks:<input type="text" id = "remarks"><br>
+
+            <button type="submit" onclick="addNewTransaction()">Add</button>
+        </center>
+		`;
+    }
+
+    function addExpensePage(){
+        document.getElementById("contentPart").innerHTML =`
+        <center>
+        	<h2>Add a New Transaction</h2>
+            From/To : <input type="text" id = "participant"><br>
+            Date:<input type="date" id = "date"><br>
+            Type : <select name="type" id="transactionType">
+                <option value="EXPENSE">Expenses</option>
+                </select><br>
+            Category:<select name="category" id="transactionCategory">
+                <option value="MISCELLANEOUS">Misc</option>
+                <option value="FOOD_BEVERAGES">Food & Beverages</option>
+                <option value="SERVICES">Services</option>
+                <option value="JOB">Job</option>
+                <option value="CLOTHING_APPAREL">Clothing</option>
+                </select><br>
+            Mode:<select name="mode" id="payMode">
+                <option value="CASH">Cash</option>
+                <option value="NET_BANKING">Net Banking</option>
+                <option value="UPI">UPI</option>
+                <option value="CARD">Card</option>
+                </select><br>
+            Amount:<input type="number" id = "amount"><br>
+            Remarks:<input type="text" id = "remarks"><br>
+
+            <button type="submit" onclick="addNewTransaction()">Add</button>
+        </center>
+		`;
+    }
+
+    function addNewTransaction(){
+        console.log(document.getElementById("participant").value);
+        var transaction = {};
+        if(document.getElementById("participant").value == ""){
+        	alert("Participant Name EMPTY");
+        	return ;
+        }
+        transaction["participant"] = document.getElementById("participant").value == "" ? null : document.getElementById("participant").value;
+        transaction["type"] = document.getElementById("transactionType").value == "" ? null : document.getElementById("transactionType").value;
+        transaction["category"] = document.getElementById("transactionCategory").value == "" ? null : document.getElementById("transactionCategory").value;
+        transaction["mode"] = document.getElementById("payMode").value == "" ? null : document.getElementById("payMode").value;
+        if(document.getElementById("amount").value == ""){
+        	alert("Transaction Amount EMPTY");
+        	return;
+        }
+        transaction["amount"] = document.getElementById("amount").value == "" ? null : document.getElementById("amount").value;
+        transaction["remarks"] = document.getElementById("remarks").value == "" ? null : document.getElementById("remarks").value;
+    	
+        if(document.getElementById("date").value==""){
+        	var curr = new Date();
+        	transaction["date"] = curr.getDate();
+        	transaction["month"] = curr.getMonth()+1;
+        	transaction["year"] = curr.getFullYear();
+        }
+        else{
+        	var curr = document.getElementById("date").value.split("-");
+        	transaction["date"] = parseInt(curr[2]);
+        	transaction["month"] = parseInt(curr[1]);
+        	transaction["year"] = parseInt(curr[0]);
+        }
+        console.log(transaction);
+    	if(newTransactionSupport(transaction)){
+            document.getElementById("contentPart").innerHTML=` 
+                <div class="transactionClass">
+                    Participant ${transaction.participant} 
+                	Type ${transaction.type} 
+                	Category ${transaction.category} 
+                	Mode ${transaction.mode}  
+                	Amount ${transaction.amount}
+        		    Date of Transaction ${transaction.dateOfTransaction}
+                </div>
+            `;
+        }
+    }
+
+    async function newTransactionSupport(transaction){
+    	let response = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+currentUserObject.email+"/create-transaction", { 
+            method: "POST",
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "participant" : transaction.participant,
+                "type": transaction.type,
+                "category": transaction.category,
+                "mode": transaction.mode,
+                "amount": transaction.amount,
+                "remarks": transaction.remarks,
+                "date": transaction.date, 
+                "month": transaction.month,
+               	"year":transaction.year
+            }
+        }).then(response => response.json());
+    	console.log(response);
+        if(response.ok)
+            return true;
+        return false;
+    }
+
+    async function searchTransactionPage(){
+        let allTrans = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-transactions",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(allTrans => allTrans.json());
+        allTransUpdated = allTrans;
+        document.getElementById("contentPart").innerHTML =`
+            <h2>Search Transaction</h2>
+            SearchBy Name : <input type="text" id="participantName"><br>
+            SearchBy Category : <select name="category" id="transactionCategory">
+                <option value="">Select</option>
+                <option value="MISCELLANEOUS">Misc</option>
+                <option value="FOOD_BEVERAGES">Food & Beverages</option>
+                <option value="SERVICES">Services</option>
+                <option value="JOB">Job</option>
+                <option value="CLOTHING_APPAREL">Clothing</option>
+                </select><br>
+            SearchBy Payment Mode :<select name="mode" id="payMode">
+                <option value="">Select</option>
+                <option value="CASH">Cash</option>
+                <option value="NET_BANKING">Net Banking</option>
+                <option value="UPI">UPI</option>
+                <option value="CARD">Card</option>
+                </select><br>
+            SearchBy Transaction Type : <select name="type" id="transactionType">
+                <option value="">Select</option>
+                <option value="INCOME">Income</option>
+                <option value="EXPENSE">Expenses</option>
+                <option value="LOAN">LOAN Amount</option>
+                <option value="INTEREST">Interest</option>
+                </select><br>
+            <button onclick="searchTransactions()">SEARCH</button>
+
+            <div id="searchResults"></div>
+        `;
+    }
+
+    function searchTransactions(){
+        console.log("searching");
+        var name = document.getElementById("participantName").value;
+        var type = document.getElementById("transactionType").value;
+        var mode = document.getElementById("payMode").value;
+        var cat = document.getElementById("transactionCategory").value;
+        
+        document.getElementById("searchResults").innerHTML=``;
+        document.getElementById("searchResults").innerHTML=``+
+            allTransUpdated.map(trans=>{
+                if(  (name == "" || trans.participant.search(name) != -1)
+                	&& (type=="" || trans.type.search(type) != -1)
+                	&& (cat ==""|| trans.category.search(cat)!=-1)
+                	&& (mode==""||trans.mode.search(mode)!=-1)){
+                	return `<div class="transactionClass" onclick=showTransaction()>
+                				Participant ${trans.participant} 
+                				Type ${trans.type} 
+                				Category ${trans.category} 
+                				Mode ${trans.mode}  
+                				Amount ${trans.amount}
+        		        		Date of Transaction ${trans.dateOfTransaction}
+        		        	</div><br>`
+                	}
+        		 else
+        		   	return ``
+        	        
+            }).join(``);
+    }
+
+    async function allTransactionsPage(){
+        let allTrans = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-transactions",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(allTrans => allTrans.json());
+        console.log(allTrans);
         document.getElementById("contentPart").innerHTML = `<h1>All Transactions</h1><br>`+
-        	currentUserObject.transactions.map(trans => {
-        	return `<div onclick=showTransaction()> Type ${trans.type} Category ${trans.category} Mode ${trans.mode}  Amount ${trans.amount}
-        		Date of Transaction ${trans.dateOfTransaction}</div>
+        	allTrans.map(trans => {
+        	return `<div class="transactionClass" onclick=showTransaction()>Participant ${trans.participant} <br>Type ${trans.type} <br>Category ${trans.category} <br>Mode ${trans.mode}  <br>Amount ${trans.amount}
+        		<br>Date of Transaction ${trans.dateOfTransaction}</div>
         		<br>
         	`
         }).join('');
-        
     }
 
-	function showTransaction(){
-		console.log("trans");
-	}
+    function searchMonthlyExpensePage(){
+        document.getElementById("contentPart").innerHTML =`
+        <h2>Search Monthly Expenses</h2><br>
+            Month : <input type="number" id="month"> Year : <input type="number" id="year"> <button onclick="searchMonthlyExpenseSupport()">GO</button>
+            <br>
+            <div id="searchResults"></div>`;
+    }
+	
+    async function searchMonthlyExpenseSupport(){
+        var mon = document.getElementById("month").value;
+        var yr = document.getElementById("year").value;
+        if(mon != "" && yr != ""){
+            let allMonthly = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/net-month/"+mon+"/"+yr,{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(allMonthly => allMonthly.json());
+        console.log(allMonthly);
+        document.getElementById("searchResults").innerHTML =`<div class="monthlyExpenseClass"> Year: ${allMonthly.year} Month: ${allMonthly.month} <br><br> Income: ${allMonthly.income} Expenditure: ${allMonthly.expenditure} Savings: ${allMonthly.savings} </div>`;
+        }
+        else{
+            alert("Empty fields");
+        }
+    }
 
+    async function allMonthlyExpensePage(){
+        let allMonthly = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-net-month-amount",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(allMonthly => allMonthly.json());
+        console.log(allMonthly);
+        document.getElementById("contentPart").innerHTML =`<h2>Monthly Expense Reports</h2><br>`+
+            allMonthly.map(month => {
+                return `<div class="monthlyExpenseClass"> Year: ${month.year} Month: ${month.month} <br><br> Income: ${month.income} Expenditure: ${month.expenditure} Savings: ${month.savings} </div>`
+            }).join(`<br>`);
+    }
 
+    function createRecurringExpensePage(){
+        document.getElementById("contentPart").innerHTML =`
+            <center>
+            Recurring Expense Name : <input type="text" id="name"><br>
+            Periodicity (months) : <input type="number" id = "periodicity"><br>
+            Participant : <input type="text" id = "participant"><br>
+            Category : <select name="category" id="recCategory">
+                <option value="MISCELLANEOUS">Misc</option>
+                <option value="MANDATORY_EXPENSES">Mandatory Expenses</option>
+                <option value="GROCERIES">Groceries</option>
+                <option value="MEDICINES">Medicines</option>
+                <option value="POWER_BILLS">Power bills</option>
+                </select><br>
+            Type : <select name="rtype" id="recType">
+                <option value="MISCELLANEOUS">Misc</option>
+                <option value="DONATION">Donation</option>
+                <option value="LOAN_INTEREST_PAYMENT">Loan Interest Pay</option>
+                </select><br>
+            Remarks : <input type="text" id="remarks"><br><br>
+            <button onclick="createRecExpenseSupport()">Create</button>
+            </center>
+        `;
+    }
 
+    async function createRecExpenseSupport(){
+        var name = document.getElementById("name").value;
+        if(name==""){
+            alert("Name Empty");
+            return;
+        }
+        var periodicity = document.getElementById("periodicity").value;
+        if(periodicity==""){
+            alert("Empty Periodicity");
+            return ;
+        }
+        var participant = document.getElementById("participant").value;
+        if(participant==""){
+            alert("Empty Participant");
+            return;
+        }
 
+        let rec = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/create-recurring",{
+            	method : "POST",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+                    "name" : name,
+                    "periodicity" : periodicity,
+                    "participant" : participant,
+                    "category": document.getElementById("recCategory").value,
+                    "type": document.getElementById("recType").value,
+                    "remarks": document.getElementById("remarks").value
+            	}
+            }).then(rec => rec.json());
+        console.log(rec);
+    }
 
+    async function closeRecurringExpensePage(){
+        document.getElementById("contentPart").innerHTML =`Close the Recurring Expense`;
+        let activeRec = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-open-recurring-expenses",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(activeRec => activeRec.json());
+        console.log(activeRec);
+        allActiveRec = activeRec;
+        document.getElementById("contentPart").innerHTML =`<h2>All Active Recurring Expenses</h2>`
+        + activeRec.map((rec,index)=>{
+            return `<div class="recExpenseClass" > Id: ${rec.id} Name: ${rec.name} Participant: ${rec.participant} Category: ${rec.category} Type: ${rec.category} Periodicity: ${rec.periodicity} <button onclick="closeThisRecExpense(${index})">CLOSE</button> </div>`
+        });
+    }
 
+    async function closeThisRecExpense(id){
+        console.log(id);
+        let response = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/close-recurring-name/"+allActiveRec[id].name+"/",{
+            method : "PUT",
+            headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+        }).then(response => response.json());
+        console.log(response);
+        console.log("close")
+    }
 
+    async function addTransactionToRecurringExpensePage(){
+        let activeRec = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-open-recurring-expenses",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(activeRec => activeRec.json());
+        console.log(activeRec);
+        allActiveRec = activeRec;
+        document.getElementById("contentPart").innerHTML =`
+        <center>
+        	<h2>Add a New Transaction - Recurring Expense</h2>
+            RecurringExpense : <select name="rec" id="rec">`+
+            allActiveRec.map(rec => {
+                return `<option value="`+ rec.name+`">`+rec.name+`</option>`
+            }).join(``)
+                +`</select><br>
+            From/To : <input type="text" id = "participant"><br>
+            Date:<input type="date" id = "date"><br>
+            Type : <select name="type" id="transactionType">
+                <option value="INCOME">Income</option>
+                <option value="EXPENSE">Expenses</option>
+                <option value="LOAN">LOAN Amount</option>
+                <option value="INTEREST">Interest</option>
+                </select><br>
+            Category:<select name="category" id="transactionCategory">
+                <option value="MISCELLANEOUS">Misc</option>
+                <option value="FOOD_BEVERAGES">Food & Beverages</option>
+                <option value="SERVICES">Services</option>
+                <option value="JOB">Job</option>
+                <option value="CLOTHING_APPAREL">Clothing</option>
+                </select><br>
+            Mode:<select name="mode" id="payMode">
+                <option value="CASH">Cash</option>
+                <option value="NET_BANKING">Net Banking</option>
+                <option value="UPI">UPI</option>
+                <option value="CARD">Card</option>
+                </select><br>
+            Amount:<input type="number" id = "amount"><br>
+            Remarks:<input type="text" id = "remarks"><br>
 
+            <button type="submit" onclick="addNewTransactionToRec()">Add</button>
+        </center>
+		`;
+    }
 
+    function addNewTransactionToRec(){
+        console.log(document.getElementById("participant").value);
+        var transaction = {};
+        if(document.getElementById("participant").value == ""){
+        	alert("Participant Name EMPTY");
+        	return ;
+        }
+        transaction["rec-name"] = document.getElementById("rec").value;
+        transaction["participant"] = document.getElementById("participant").value == "" ? null : document.getElementById("participant").value;
+        transaction["type"] = document.getElementById("transactionType").value == "" ? null : document.getElementById("transactionType").value;
+        transaction["category"] = document.getElementById("transactionCategory").value == "" ? null : document.getElementById("transactionCategory").value;
+        transaction["mode"] = document.getElementById("payMode").value == "" ? null : document.getElementById("payMode").value;
+        if(document.getElementById("amount").value == ""){
+        	alert("Transaction Amount EMPTY");
+        	return;
+        }
+        transaction["amount"] = document.getElementById("amount").value == "" ? null : document.getElementById("amount").value;
+        transaction["remarks"] = document.getElementById("remarks").value == "" ? null : document.getElementById("remarks").value;
+    	
+        if(document.getElementById("date").value==""){
+        	var curr = new Date();
+        	transaction["date"] = curr.getDate();
+        	transaction["month"] = curr.getMonth()+1;
+        	transaction["year"] = curr.getFullYear();
+        }
+        else{
+        	var curr = document.getElementById("date").value.split("-");
+        	transaction["date"] = parseInt(curr[2]);
+        	transaction["month"] = parseInt(curr[1]);
+        	transaction["year"] = parseInt(curr[0]);
+        }
+        console.log(transaction);
+    	if(newTransactionRecSupport(transaction)){
+            if(newTransactionSupport(transaction)){
+            document.getElementById("contentPart").innerHTML=` 
+                <div class="transactionClass">
+                    Participant ${transaction.participant} 
+                	Type ${transaction.type} 
+                	Category ${transaction.category} 
+                	Mode ${transaction.mode}  
+                	Amount ${transaction.amount}
+        		    Date of Transaction ${transaction.dateOfTransaction}
+                </div>
+            `;
+        }
+        };
+    } 
 
+    async function newTransactionRecSupport(transaction){
+    	let response = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+currentUserObject.email+"/create-rec-transaction", { 
+            method: "POST",
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "participant" : transaction.participant,
+                "type": transaction.type,
+                "category": transaction.category,
+                "mode": transaction.mode,
+                "amount": transaction.amount,
+                "remarks": transaction.remarks,
+                "date": transaction.date, 
+                "month": transaction.month,
+               	"year":transaction.year,
+                "rec-name":transaction["rec-name"]
+            }
+        }).then(response => response.json());
+    	console.log(response);
+        if(response.ok)
+            return true;
+        return false;
+    }
 
+    function searchActiveRecurringExpensePage(){
+        document.getElementById("contentPart").innerHTML =`Search from Active Recurring Expenses`;
+    }
 
+    function searchClosedRecurringExpensePage(){
+        document.getElementById("contentPart").innerHTML =`Search from Closed Recurring Expenses`;
+    }
 
+    async function allActiveRecurringExpensesPage(){
+        let activeRec = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-open-recurring-expenses",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(activeRec => activeRec.json());
+        console.log(activeRec);
+        document.getElementById("contentPart").innerHTML =`<h2>All Active Recurring Expenses</h2>`
+        + activeRec.map(rec=>{
+            var su = 0;
+            var ex = 0;
+            rec.allTransactions.map((trans)=>{
+                if(trans.type == "INCOME" || trans.type == "LOAN")
+                    su = su + trans.amount;
+                else 
+                    ex = ex + trans.amount;
+            });
+            return `<div class="recExpenseClass"> Id: ${rec.id} Name: ${rec.name} Participant: ${rec.participant} <br>Category: ${rec.category} Type: ${rec.category} <br>Periodicity: ${rec.periodicity} <br> 
+                Net InFlow : ${su} <br>
+                Net OutFlow : ${ex}<br>
+                </div>`
+        });
+    }
 
+    async function allClosedRecurringExpensesPage(){
+        let activeRec = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-closed-recurring-expenses",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(activeRec => activeRec.json());
+        console.log(activeRec);
+        document.getElementById("contentPart").innerHTML =`<h2>All Closed Recurring Expenses</h2>`
+        + activeRec.map(rec=>{
+            return `<div class="recExpenseClass"> Id: ${rec.id} Name: ${rec.name} Participant: ${rec.participant} Category: ${rec.category} Type: ${rec.category} Periodicity: ${rec.periodicity} </div>`
+        });
+    }
 
+    async function allRecurringExpensesPage(){
+        let activeRec = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-open-recurring-expenses",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(activeRec => activeRec.json());
+        console.log(activeRec);
+        let closedRec = await fetch("http://localhost:8080/ExpenseManagement/app/manager/"+userEmailCurrent+"/all-closed-recurring-expenses",{
+            	method : "GET",
+            	headers: {
+            		"Content-type": "application/json; charset=UTF-8",
+            	}
+            }).then(closedRec => closedRec.json());
+        activeRec.push(...closedRec);
+        console.log(activeRec);
+        document.getElementById("contentPart").innerHTML =`<h2>All Recurring Expenses</h2>`
+        + activeRec.map(rec=>{
+            return `<div class="recExpenseClass"> Id: ${rec.id} Name: ${rec.name} Participant: ${rec.participant} Category: ${rec.category} Type: ${rec.category} Periodicity: ${rec.periodicity} </div>`
+        });
+    }
 
+    function logOutPage(){
+        document.getElementById("contentPart").innerHTML =``;
+    }
 
-
-
-
-
-
+    function logOut(){
+    	var allTransUpdated = null;
+    	var userEmailCurrent = null;
+        var currentUserObject = null;
+        loginPageRender();
+    }
 
 </script>
 

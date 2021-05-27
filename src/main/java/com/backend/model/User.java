@@ -81,8 +81,8 @@ public class User implements Serializable {
 		return accountCreationDate;
 	}
 
-	public Set<Transaction> getTransactions() {
-		return transactions;
+	public Transaction[] getTransactions() {
+		return transactions.toArray(new Transaction[0]);
 	}
 
 	public void addTransaction(Transaction transaction) {
