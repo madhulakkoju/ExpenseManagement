@@ -28,8 +28,6 @@ import com.backend.model.TransactionCategory;
 import com.backend.model.TransactionType;
 import com.backend.model.User;
 
-import jdk.internal.org.jline.utils.Log;
-
 @Path(value = "manager")
 public class ManagerService {
 	private static Logger log = Logger.getLogger(ManagerService.class);
@@ -82,6 +80,7 @@ public class ManagerService {
 	public Response getUser(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		User user = this.users.getUser(email);
+		log.debug("sending user object : "+ user.getEmail());
 		return Response.ok(mapper.writeValueAsString(user)).build();
 	}
 
@@ -90,6 +89,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getallTransactions(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending all transactions of user : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getTransactions())).build();
 	}
 
@@ -98,15 +98,16 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getallOpenRecurringExpenses(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending all Active Recurring Expense : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getAllRecurringExpenses())).build();
 	}
 
-	
 	@GET
 	@Path(value = "/{email}/all-closed-recurring-expenses")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getallClosedRecurringExpenses(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Closed Recurring Expenses : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getClosedRecurringExpenses())).build();
 	}
 
@@ -115,6 +116,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getOpenRecurringExpense(@PathParam("email") String email, @PathParam("name") String name)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Recurring Expense of name : "+name+"to User : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getRecurringExpense(name))).build();
 	}
 
@@ -123,6 +125,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getClosedRecurringExpense(@PathParam("email") String email, @PathParam("name") String name)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Closed Recurrence Expense "+name+" to user : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getClosedRecurringExpense(name))).build();
 	}
 
@@ -131,6 +134,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getCurrentMonth(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Current Month Stats to User : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).currentMonth())).build();
 	}
 
@@ -139,6 +143,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getAllMonths(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending all Net Month Statistics to User : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getMonthly().getAllMonths())).build();
 	}
 
@@ -147,6 +152,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getAllMonths(@PathParam("email") String email, @PathParam("month") int month,@PathParam("year") int year) throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Month Statistics to user : "+email+ " Month "+month+" Year "+year);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getMonthly().getNetAmount(year, month)))
 				.build();
 	}
@@ -156,6 +162,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getCurrentMonthTransactions(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Current Month Transactions to User : "+ email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getCurrentMonthTransactions())).build();
 	}
 
@@ -164,6 +171,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getCurrentYearTransactions(@PathParam("email") String email)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Current Year Transactions to User : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getCurrentYearTransactions())).build();
 	}
 
@@ -172,6 +180,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getYearTransactions(@PathParam("email") String email, @PathParam("year") int year)throws JsonGenerationException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Sending Year "+year+" Transactions to User : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getYearTransactions(year))).build();
 	}
 	
@@ -179,13 +188,14 @@ public class ManagerService {
 	@Path(value="/sign-up")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response signUpUser( @HeaderParam("email") String email, @HeaderParam("name") String name, @HeaderParam("mobile") String mobile, @HeaderParam("password") String password) throws JsonGenerationException, JsonMappingException, IOException{
-		
+		log.debug("Sign Up Requested from email : "+email);
 		if(this.users.getUser(email) != null) {
-			log.debug(this.users.getUser(email));
+			log.info(email+" already has an account");
 			return Response.status(500, "already-signed-up").build();
 		}
 		User createdUser = this.createNewUser(email, name, mobile, password);
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("User Account Creation Successful");
 		return Response.ok(mapper.writeValueAsString(createdUser)).build();
 	}
 	 
@@ -196,6 +206,7 @@ public class ManagerService {
 		RecurringExpenses exp = new RecurringExpenses(name,periodicity,participant,category,type,remarks);
 		users.getUser(email).addRecurringExpense(exp);
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Recurring Expense Created to user : "+email+"with name "+name);
 		return Response.ok(mapper.writeValueAsString(exp)).build();
 	}
 	
@@ -216,6 +227,7 @@ public class ManagerService {
 		Transaction trans = new Transaction(participant,dd,mm,yy,type,category,mode,amount,remarks);
 		users.getUser(email).addTransaction(trans);
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Transaction Created to User : "+email);
 		return Response.ok(mapper.writeValueAsString(trans)).build();
 	}
 
@@ -227,6 +239,7 @@ public class ManagerService {
 		//users.getUser(email).getRecurringExpense(recName).addTransaction(trans);
 		users.getUser(email).addTransaction(trans, recName);
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Transaction created under Recurrence Expression "+recName+" to User : "+email);
 		return Response.ok(mapper.writeValueAsString(trans)).build();
 	}
 	
@@ -242,6 +255,7 @@ public class ManagerService {
 		trans.setRemarks(remarks);
 		trans.setType(type);
 		ObjectMapper mapper = new ObjectMapper();
+		log.debug("Transaction data modified for User "+email);
 		return Response.ok(mapper.writeValueAsString(trans)).build();
 	}
 	
@@ -256,7 +270,7 @@ public class ManagerService {
 		rec.setRemarks(remarks);
 		rec.setPeriodicity(periodicity);
 		rec.setType(type);
-		
+		log.debug("Updated Recurring Expense "+name+" of User : "+email);
 		ObjectMapper mapper = new ObjectMapper();
 		return Response.ok(mapper.writeValueAsString(rec)).build();
 	}
@@ -274,6 +288,7 @@ public class ManagerService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response closeRecurringExpense(@PathParam("email") String email, @PathParam("name") String name ) {
 		RecurringExpenses exp = users.getUser(email).closeRecurringExpense(name);
+		log.debug("Closing Recurring Expense "+name+" of User "+email);
 		return Response.ok(exp).build();
 	}
 	

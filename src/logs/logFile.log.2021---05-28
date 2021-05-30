@@ -1,0 +1,698 @@
+2021-05-28 19:26:11,951 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-28 19:26:12,016 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:26:12,036 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:26:12,131 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:26:12,134 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:26:12,155 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-28 19:26:12,155 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-28 19:26:12,156 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-28 19:26:12,156 DEBUG :com.backend.model.User [<init>] New User Created ADMIN_USER 
+2021-05-28 19:26:12,180 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-28 19:26:12,184 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 19:26:12,185 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 19:43:27,537 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-28 19:43:27,595 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:43:27,615 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:43:27,692 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:43:27,695 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 19:43:27,722 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-28 19:43:27,723 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-28 19:43:27,723 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-28 19:43:27,723 DEBUG :com.backend.model.User [<init>] New User Created ADMIN_USER 
+2021-05-28 19:43:27,739 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-28 19:43:27,742 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 19:43:27,742 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 19:43:43,615 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-28 19:43:43,690 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-28 19:43:44,104 DEBUG :com.backend.service.ManagerService [getUser] sending user object : madhu@gmail.com 
+2021-05-28 19:43:44,311 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:44,313 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:44,314 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:44,316 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:43:44,316 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:44,317 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:45,343 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 19:43:45,345 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:43:45,346 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:45,347 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:45,347 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:45,348 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:43:45,348 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:45,349 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:45,953 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 19:43:45,954 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 19:43:45,958 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:45,958 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:45,959 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:45,959 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:43:45,959 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:45,960 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:47,651 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 19:43:47,652 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:43:47,653 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:47,654 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:47,654 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:47,655 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:43:47,655 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:47,655 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:51,941 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 19:43:51,942 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:43:51,944 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:51,944 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:51,945 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:43:51,945 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:43:51,946 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:43:51,946 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:20,528 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-transaction 
+2021-05-28 19:44:20,529 DEBUG :com.backend.service.ManagerService [createTransaction] Transaction Created to User : madhu@gmail.com 
+2021-05-28 19:44:20,533 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:20,534 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:20,534 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:20,534 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:44:20,535 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:20,535 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:24,960 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 19:44:24,961 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:44:24,964 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:24,964 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:24,964 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:24,965 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:44:24,965 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:24,965 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:31,405 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 19:44:31,406 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:44:31,408 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:31,408 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:31,409 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:31,409 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:44:31,409 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:31,410 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:39,836 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-transaction 
+2021-05-28 19:44:39,837 DEBUG :com.backend.service.ManagerService [createTransaction] Transaction Created to User : madhu@gmail.com 
+2021-05-28 19:44:39,842 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:39,843 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:39,843 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:39,844 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:44:39,845 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:39,845 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:41,256 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 19:44:41,257 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:44:41,259 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:41,259 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:41,260 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:44:41,260 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:44:41,261 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:44:41,261 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:45:37,463 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 19:45:37,464 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:45:37,466 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:45:37,466 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:45:37,467 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:45:37,467 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:45:37,467 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:45:37,468 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:45:48,349 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 19:45:48,350 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 19:45:48,354 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:45:48,354 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:45:48,355 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:45:48,355 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:45:48,355 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:45:48,356 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:46:04,915 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 19:46:04,916 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 19:46:04,920 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:46:04,921 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:46:04,921 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:46:04,921 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:46:04,922 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:46:04,922 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:46:40,435 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 19:46:40,436 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 19:46:40,440 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:46:40,441 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:46:40,441 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:46:40,442 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:46:40,442 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:46:40,442 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:13,697 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021 
+2021-05-28 19:47:13,698 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 19:47:13,700 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:13,700 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:13,701 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:13,701 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:47:13,701 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:13,702 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:21,328 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/6/2021 
+2021-05-28 19:47:21,329 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 6 Year 2021 
+2021-05-28 19:47:21,332 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:21,333 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:21,333 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:21,334 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:47:21,334 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:21,335 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:27,896 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-net-month-amount 
+2021-05-28 19:47:27,897 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending all Net Month Statistics to User : madhu@gmail.com 
+2021-05-28 19:47:27,901 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:27,901 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:27,902 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:27,902 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:47:27,902 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:27,903 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:56,654 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-net-month-amount 
+2021-05-28 19:47:56,655 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending all Net Month Statistics to User : madhu@gmail.com 
+2021-05-28 19:47:56,657 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:56,658 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:56,658 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:47:56,658 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:47:56,659 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:47:56,659 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:17,466 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-recurring 
+2021-05-28 19:48:17,468 DEBUG :com.backend.model.RecurringExpenses [<init>] Created Recurring Expense Lakkoju Madhu 
+2021-05-28 19:48:17,469 DEBUG :com.backend.service.ManagerService [createRecurringExpenses] Recurring Expense Created to user : madhu@gmail.comwith name Lakkoju Madhu 
+2021-05-28 19:48:17,474 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:17,475 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:17,475 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:17,475 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:48:17,476 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:17,476 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:33,702 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 19:48:33,703 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 19:48:33,707 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:33,707 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:33,707 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:33,708 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:48:33,708 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:33,708 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:37,161 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 19:48:37,162 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 19:48:37,165 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:37,165 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:37,166 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:37,166 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:48:37,166 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:37,167 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:51,075 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 19:48:51,076 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 19:48:51,079 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:51,079 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:51,080 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:48:51,080 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:48:51,080 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:48:51,081 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:05,013 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-rec-transaction 
+2021-05-28 19:49:05,015 DEBUG :com.backend.service.ManagerService [createTransactionForRecExp] Transaction created under Recurrence Expression Lakkoju Madhu to User : madhu@gmail.com 
+2021-05-28 19:49:05,018 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-transaction 
+2021-05-28 19:49:05,020 DEBUG :com.backend.service.ManagerService [createTransaction] Transaction Created to User : madhu@gmail.com 
+2021-05-28 19:49:05,020 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:05,022 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:05,023 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:05,023 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:05,024 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:05,024 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:05,025 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:05,025 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:05,026 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:05,026 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:05,027 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:05,028 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:09,953 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 19:49:09,954 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 19:49:09,958 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:09,959 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:09,959 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:09,959 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:09,960 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:09,960 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:39,712 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-closed-recurring-expenses 
+2021-05-28 19:49:39,713 DEBUG :com.backend.service.ManagerService [getallClosedRecurringExpenses] Sending Closed Recurring Expenses : madhu@gmail.com 
+2021-05-28 19:49:39,713 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:39,714 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:39,714 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:39,714 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:39,715 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:39,715 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:44,494 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 19:49:44,495 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 19:49:44,499 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:44,500 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:44,500 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:44,500 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:44,500 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:44,501 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:46,821 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 19:49:46,822 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 19:49:46,827 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:46,827 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:46,828 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:46,828 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:46,828 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:46,829 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:48,793 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/close-recurring-name/Lakkoju Madhu/ 
+2021-05-28 19:49:48,794 DEBUG :com.backend.service.ManagerService [closeRecurringExpense] Closing Recurring Expense Lakkoju Madhu of User madhu@gmail.com 
+2021-05-28 19:49:48,796 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:48,796 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 19:49:48,796 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 19:49:48,797 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:48,797 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:48,798 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 19:49:51,148 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-closed-recurring-expenses 
+2021-05-28 19:49:51,149 DEBUG :com.backend.service.ManagerService [getallClosedRecurringExpenses] Sending Closed Recurring Expenses : madhu@gmail.com 
+2021-05-28 19:49:51,153 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:51,154 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:51,154 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:51,154 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:51,154 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:51,155 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:53,127 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 19:49:53,127 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 19:49:53,128 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:53,128 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:53,129 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:53,129 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 19:49:53,129 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 19:49:53,129 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 19:49:55,924 DEBUG :com.backend.controllers.MessagePageController [service] madhu@gmail.com 
+2021-05-28 19:49:56,374 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Opening new Session/Connection 
+2021-05-28 19:49:56,374 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] User Logged in 
+2021-05-28 19:49:56,375 DEBUG :com.backend.model.MessageThread [<init>] Message Thread Object Created for User : madhu@gmail.com 
+2021-05-28 19:50:13,477 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  HKBSD FS FD 
+2021-05-28 19:50:13,478 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 19:50:15,082 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  FSDFSDF 
+2021-05-28 19:50:15,082 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 19:50:15,802 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  SDFSDF 
+2021-05-28 19:50:15,802 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 19:50:16,393 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  SDFSD 
+2021-05-28 19:50:16,393 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 19:50:16,617 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  F 
+2021-05-28 19:50:16,617 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 19:50:16,938 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  SDF 
+2021-05-28 19:50:16,938 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 19:50:19,354 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  SDF 
+2021-05-28 19:50:19,355 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 19:52:12,454 DEBUG :com.backend.service.ChatServerEndPoint [onClose] madhu@gmail.comabout to close 
+2021-05-28 19:52:12,454 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session removed madhu@gmail.com 
+2021-05-28 19:52:12,454 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session closed 
+2021-05-28 20:24:49,475 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-28 20:24:49,531 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:24:49,547 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:24:49,634 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:24:49,637 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:24:49,657 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-28 20:24:49,657 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-28 20:24:49,657 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-28 20:24:49,658 DEBUG :com.backend.model.User [<init>] New User Created ADMIN_USER 
+2021-05-28 20:24:49,676 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-28 20:24:49,681 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 20:24:49,682 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 20:25:07,501 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-28 20:25:07,551 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-28 20:25:07,923 DEBUG :com.backend.service.ManagerService [getUser] sending user object : madhu@gmail.com 
+2021-05-28 20:25:08,080 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:25:08,081 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:08,082 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:08,084 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:25:08,085 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:25:08,085 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:19,135 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 20:25:19,137 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 20:25:19,140 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:25:19,140 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:19,141 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:19,142 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:25:19,142 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:25:19,143 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:51,374 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-transaction 
+2021-05-28 20:25:51,376 DEBUG :com.backend.service.ManagerService [createTransaction] Transaction Created to User : madhu@gmail.com 
+2021-05-28 20:25:51,383 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:25:51,384 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:51,384 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:25:51,385 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:25:51,385 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:25:51,385 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:04,421 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 20:26:04,422 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 20:26:04,424 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:04,424 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:04,425 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:04,425 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:26:04,425 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:04,426 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:10,749 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 20:26:10,750 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 20:26:10,756 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:10,756 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:10,756 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:10,757 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:26:10,757 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:10,757 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:35,377 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 20:26:35,378 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 20:26:35,383 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:35,384 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:35,384 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:35,384 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:26:35,385 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:35,385 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:53,809 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-net-month-amount 
+2021-05-28 20:26:53,810 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending all Net Month Statistics to User : madhu@gmail.com 
+2021-05-28 20:26:53,812 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:53,812 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:53,812 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:26:53,813 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:26:53,813 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:26:53,813 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:27:24,093 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2020 
+2021-05-28 20:27:24,094 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2020 
+2021-05-28 20:27:24,096 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:27:24,097 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:27:24,097 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:27:24,097 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:27:24,098 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:27:24,098 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:27:36,839 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2022 
+2021-05-28 20:27:36,840 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2022 
+2021-05-28 20:27:36,842 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:27:36,842 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:27:36,843 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:27:36,843 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:27:36,844 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:27:36,844 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:19,478 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-recurring 
+2021-05-28 20:28:19,480 DEBUG :com.backend.model.RecurringExpenses [<init>] Created Recurring Expense REURRING EXPENSE test 
+2021-05-28 20:28:19,481 DEBUG :com.backend.service.ManagerService [createRecurringExpenses] Recurring Expense Created to user : madhu@gmail.comwith name REURRING EXPENSE test 
+2021-05-28 20:28:19,485 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:19,485 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:19,486 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:19,486 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:28:19,487 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:19,487 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:20,450 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:28:20,450 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:28:20,454 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:20,454 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:20,455 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:20,455 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:28:20,456 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:20,456 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:33,483 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:28:33,484 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:28:33,487 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:33,488 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:33,488 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:33,489 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:28:33,489 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:33,489 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:52,986 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-rec-transaction 
+2021-05-28 20:28:52,987 DEBUG :com.backend.service.ManagerService [createTransactionForRecExp] Transaction created under Recurrence Expression REURRING EXPENSE test to User : madhu@gmail.com 
+2021-05-28 20:28:52,987 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-transaction 
+2021-05-28 20:28:52,989 DEBUG :com.backend.service.ManagerService [createTransaction] Transaction Created to User : madhu@gmail.com 
+2021-05-28 20:28:52,991 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:52,992 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:52,992 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:52,993 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:52,993 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:52,994 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:28:52,994 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:52,994 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:52,995 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:28:52,995 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:52,995 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:52,996 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:59,302 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:28:59,303 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:28:59,308 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:59,309 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:59,309 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:28:59,310 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:28:59,310 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:28:59,310 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:15,910 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:29:15,911 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:29:15,917 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:15,917 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:15,918 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:15,918 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:29:15,918 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:15,918 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:24,651 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/close-recurring-name/REURRING EXPENSE test/ 
+2021-05-28 20:29:24,652 DEBUG :com.backend.service.ManagerService [closeRecurringExpense] Closing Recurring Expense REURRING EXPENSE test of User madhu@gmail.com 
+2021-05-28 20:29:24,663 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:24,664 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 20:29:24,664 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 20:29:24,665 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:29:24,665 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:24,665 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 20:29:27,159 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-closed-recurring-expenses 
+2021-05-28 20:29:27,160 DEBUG :com.backend.service.ManagerService [getallClosedRecurringExpenses] Sending Closed Recurring Expenses : madhu@gmail.com 
+2021-05-28 20:29:27,165 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:27,165 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:27,166 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:27,166 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:29:27,166 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:27,166 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:33,393 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:29:33,394 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:29:33,395 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:33,395 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:33,396 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:33,396 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:29:33,396 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:33,397 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:37,272 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:29:37,273 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:29:37,274 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:37,275 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:37,275 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:37,275 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:29:37,276 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:37,276 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:37,283 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-closed-recurring-expenses 
+2021-05-28 20:29:37,283 DEBUG :com.backend.service.ManagerService [getallClosedRecurringExpenses] Sending Closed Recurring Expenses : madhu@gmail.com 
+2021-05-28 20:29:37,288 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:37,288 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:37,289 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:37,289 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:29:37,289 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:29:37,290 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:29:45,282 DEBUG :com.backend.controllers.MessagePageController [service] madhu@gmail.com 
+2021-05-28 20:29:45,483 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Opening new Session/Connection 
+2021-05-28 20:29:45,483 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] User Logged in 
+2021-05-28 20:29:45,483 DEBUG :com.backend.model.MessageThread [<init>] Message Thread Object Created for User : madhu@gmail.com 
+2021-05-28 20:30:08,338 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  hI i HAVE A PROBLEM LOGGING INTO WEBSITE 
+2021-05-28 20:30:08,338 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 20:30:30,729 DEBUG :com.backend.service.ChatServerEndPoint [onClose] madhu@gmail.comabout to close 
+2021-05-28 20:30:30,730 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session removed madhu@gmail.com 
+2021-05-28 20:30:30,730 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session closed 
+2021-05-28 20:30:49,875 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-28 20:30:52,144 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-28 20:31:02,320 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-28 20:31:02,327 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/ADMIN_USER 
+2021-05-28 20:31:02,328 DEBUG :com.backend.service.ManagerService [getUser] sending user object : ADMIN_USER 
+2021-05-28 20:31:02,334 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:31:02,334 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:31:02,335 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:31:02,335 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:31:02,336 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:31:02,337 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:31:05,829 DEBUG :com.backend.controllers.MessagePageController [service] ADMIN_USER 
+2021-05-28 20:31:05,925 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Opening new Session/Connection 
+2021-05-28 20:31:05,925 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] ADMIN logged in 
+2021-05-28 20:31:05,941 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Admin Logged in   at    org.apache.tomcat.websocket.WsSession@5a259efd 
+2021-05-28 20:31:20,907 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  OK ILL CHECK 
+2021-05-28 20:31:20,907 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 20:31:20,907 INFO :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com Offline 
+2021-05-28 20:31:27,141 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-28 20:31:27,148 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-28 20:31:27,149 DEBUG :com.backend.service.ManagerService [getUser] sending user object : madhu@gmail.com 
+2021-05-28 20:31:27,164 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:31:27,165 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:31:27,165 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:31:27,166 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:31:27,166 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:31:27,166 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:31:28,432 DEBUG :com.backend.controllers.MessagePageController [service] madhu@gmail.com 
+2021-05-28 20:31:28,485 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Opening new Session/Connection 
+2021-05-28 20:31:28,486 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] User Logged in 
+2021-05-28 20:36:24,828 DEBUG :com.backend.service.ChatServerEndPoint [onClose] ADMIN_USERabout to close 
+2021-05-28 20:36:24,829 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session removed ADMIN_USER 
+2021-05-28 20:36:24,829 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session closed 
+2021-05-28 20:36:34,924 DEBUG :com.backend.service.ChatServerEndPoint [onClose] madhu@gmail.comabout to close 
+2021-05-28 20:36:34,924 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session removed madhu@gmail.com 
+2021-05-28 20:36:34,925 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session closed 
+2021-05-28 20:43:51,335 DEBUG :org.jboss.resteasy.plugins.providers.FileProvider [<clinit>] Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+2021-05-28 20:43:51,392 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:43:51,413 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:43:51,497 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:43:51,500 DEBUG :org.jboss.resteasy.plugins.providers.DocumentProvider [<init>] Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider 
+2021-05-28 20:43:51,519 DEBUG :com.backend.model.User [<init>] New User Created madhu@gmail.com 
+2021-05-28 20:43:51,519 DEBUG :com.backend.model.User [<init>] New User Created madhu1@gmail.com 
+2021-05-28 20:43:51,519 DEBUG :com.backend.model.User [<init>] New User Created madhu2@gmail.com 
+2021-05-28 20:43:51,519 DEBUG :com.backend.model.User [<init>] New User Created ADMIN_USER 
+2021-05-28 20:43:51,536 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.backend.application.ExpenseManagementApplication 
+2021-05-28 20:43:51,539 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.ManagerService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 20:43:51,540 INFO :org.jboss.resteasy.spi.ResteasyDeployment [processApplication] RESTEASY002220: Adding singleton resource com.backend.service.LoginService from Application class com.backend.application.ExpenseManagementApplication 
+2021-05-28 20:43:58,552 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /loginService/login/ 
+2021-05-28 20:43:58,608 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com 
+2021-05-28 20:43:58,969 DEBUG :com.backend.service.ManagerService [getUser] sending user object : madhu@gmail.com 
+2021-05-28 20:43:59,153 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:43:59,155 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:43:59,156 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:43:59,160 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:43:59,161 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:43:59,162 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:05,273 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 20:44:05,274 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 20:44:05,275 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:05,276 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:05,277 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:05,277 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:44:05,278 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:05,278 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:18,076 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 20:44:18,077 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 20:44:18,082 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:18,083 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:18,084 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:18,084 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:44:18,085 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:18,086 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:30,832 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-transaction 
+2021-05-28 20:44:30,833 DEBUG :com.backend.service.ManagerService [createTransaction] Transaction Created to User : madhu@gmail.com 
+2021-05-28 20:44:30,837 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:30,838 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:30,838 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:30,838 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:44:30,839 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:30,839 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:33,233 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/net-month/5/2021/ 
+2021-05-28 20:44:33,234 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending Month Statistics to user : madhu@gmail.com Month 5 Year 2021 
+2021-05-28 20:44:33,236 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:33,236 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:33,236 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:33,237 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:44:33,237 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:33,237 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:39,791 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-transactions 
+2021-05-28 20:44:39,792 DEBUG :com.backend.service.ManagerService [getallTransactions] Sending all transactions of user : madhu@gmail.com 
+2021-05-28 20:44:39,796 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:39,796 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:39,797 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:39,797 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:44:39,798 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:39,798 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:43,515 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-net-month-amount 
+2021-05-28 20:44:43,516 DEBUG :com.backend.service.ManagerService [getAllMonths] Sending all Net Month Statistics to User : madhu@gmail.com 
+2021-05-28 20:44:43,518 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:43,518 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:43,518 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:44:43,519 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:44:43,519 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:44:43,519 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:10,467 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-recurring 
+2021-05-28 20:45:10,468 DEBUG :com.backend.model.RecurringExpenses [<init>] Created Recurring Expense test Recurr 
+2021-05-28 20:45:10,469 DEBUG :com.backend.service.ManagerService [createRecurringExpenses] Recurring Expense Created to user : madhu@gmail.comwith name test Recurr 
+2021-05-28 20:45:10,473 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:10,473 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:10,474 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:10,474 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:10,474 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:10,475 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:12,465 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:45:12,466 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:45:12,470 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:12,471 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:12,472 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:12,472 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:12,473 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:12,473 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:26,081 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:45:26,082 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:45:26,086 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:26,086 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:26,087 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:26,087 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:26,088 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:26,088 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:41,237 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-rec-transaction 
+2021-05-28 20:45:41,239 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/create-transaction 
+2021-05-28 20:45:41,239 DEBUG :com.backend.service.ManagerService [createTransactionForRecExp] Transaction created under Recurrence Expression test Recurr to User : madhu@gmail.com 
+2021-05-28 20:45:41,240 DEBUG :com.backend.service.ManagerService [createTransaction] Transaction Created to User : madhu@gmail.com 
+2021-05-28 20:45:41,243 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:41,244 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:41,244 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:41,244 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:41,244 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:41,245 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:41,245 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:41,246 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:41,246 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:41,246 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:41,247 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:41,247 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:43,674 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:45:43,675 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:45:43,681 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:43,681 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:43,681 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:43,682 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:43,682 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:43,682 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:54,339 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:45:54,340 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:45:54,347 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:54,347 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:54,348 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:54,348 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:54,348 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:54,349 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:57,952 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:45:57,953 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:45:57,959 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:57,960 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:57,961 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:45:57,961 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:45:57,961 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:45:57,961 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:46:01,268 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/close-recurring-name/test Recurr/ 
+2021-05-28 20:46:01,269 DEBUG :com.backend.service.ManagerService [closeRecurringExpense] Closing Recurring Expense test Recurr of User madhu@gmail.com 
+2021-05-28 20:46:01,280 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:46:01,281 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 20:46:01,281 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 20:46:01,281 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:46:01,282 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:46:01,282 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJacksonProvider 
+2021-05-28 20:46:02,494 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-open-recurring-expenses 
+2021-05-28 20:46:02,495 DEBUG :com.backend.service.ManagerService [getallOpenRecurringExpenses] Sending all Active Recurring Expense : madhu@gmail.com 
+2021-05-28 20:46:02,496 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:46:02,497 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:46:02,497 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:46:02,497 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:46:02,498 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:46:02,498 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:46:09,133 DEBUG :org.jboss.resteasy.core.SynchronousDispatcher [getInvoker] RESTEASY002315: PathInfo: /manager/madhu@gmail.com/all-closed-recurring-expenses 
+2021-05-28 20:46:09,134 DEBUG :com.backend.service.ManagerService [getallClosedRecurringExpenses] Sending Closed Recurring Expenses : madhu@gmail.com 
+2021-05-28 20:46:09,139 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:46:09,140 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [getMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:46:09,140 DEBUG :org.jboss.resteasy.core.ServerResponseWriter [lambda$writeNomapResponse$2] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:46:09,140 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] Interceptor Context: org.jboss.resteasy.core.interception.ServerWriterInterceptorContext,  Method : proceed 
+2021-05-28 20:46:09,140 DEBUG :org.jboss.resteasy.spi.ResteasyProviderFactory [resolveMessageBodyWriter] MessageBodyWriter: org.jboss.resteasy.spi.ResteasyProviderFactory$SortedKey 
+2021-05-28 20:46:09,141 DEBUG :org.jboss.resteasy.core.interception.AbstractWriterInterceptorContext [proceed] MessageBodyWriter: org.jboss.resteasy.plugins.providers.StringTextStar 
+2021-05-28 20:46:16,880 DEBUG :com.backend.controllers.MessagePageController [service] madhu@gmail.com 
+2021-05-28 20:46:17,070 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Opening new Session/Connection 
+2021-05-28 20:46:17,070 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] User Logged in 
+2021-05-28 20:46:17,070 DEBUG :com.backend.model.MessageThread [<init>] Message Thread Object Created for User : madhu@gmail.com 
+2021-05-28 20:46:28,702 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  I have problem 
+2021-05-28 20:46:28,702 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 20:46:35,102 DEBUG :com.backend.controllers.MessagePageController [service] ADMIN_USER 
+2021-05-28 20:46:35,143 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Opening new Session/Connection 
+2021-05-28 20:46:35,144 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] ADMIN logged in 
+2021-05-28 20:46:35,157 DEBUG :com.backend.service.ChatServerEndPoint [onOpen] Admin Logged in   at    org.apache.tomcat.websocket.WsSession@5fe9886b 
+2021-05-28 20:46:42,651 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] madhu@gmail.com  ;;  return 
+2021-05-28 20:46:42,652 DEBUG :com.backend.service.ChatServerEndPoint [onMessage] Message Received at serrver 
+2021-05-28 20:51:49,914 DEBUG :com.backend.service.ChatServerEndPoint [onClose] ADMIN_USERabout to close 
+2021-05-28 20:51:49,915 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session removed ADMIN_USER 
+2021-05-28 20:51:49,915 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session closed 
+2021-05-28 20:51:49,916 DEBUG :com.backend.service.ChatServerEndPoint [onClose] madhu@gmail.comabout to close 
+2021-05-28 20:51:49,916 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session removed madhu@gmail.com 
+2021-05-28 20:51:49,916 DEBUG :com.backend.service.ChatServerEndPoint [onClose] Session closed 

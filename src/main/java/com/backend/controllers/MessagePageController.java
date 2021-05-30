@@ -16,7 +16,7 @@ import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/MessagePageController")
 public class MessagePageController extends HttpServlet {
-	
+	private static final long serialVersionUID = 8461572945832764280L;
 	static String email = "email";
 	static String userEmail = "userEmail";
 	private static Logger log =  Logger.getLogger(MessagePageController.class);
