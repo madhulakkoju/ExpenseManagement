@@ -34,13 +34,14 @@ public class ManagerService {
 	UserImpl users;
 	LoginImpl logins;
 
+	// Singleton Instance to be stored.
 	private static ManagerService instance;
 
 	private ManagerService() {
 		this.users = UserImpl.getObject();
 		this.logins = LoginImpl.getObject();
 	}
-
+	// Instance getter method
 	public static ManagerService getInstance() {
 		if (instance == null) {
 			instance = new ManagerService();
@@ -48,6 +49,7 @@ public class ManagerService {
 		return instance;
 	}
 
+	// New User Creating Support Methods
 	public User createNewUser(String email, String mobile, String password) {
 		logins.createLogin(email, password);
 		return this.createUser(email, mobile);
@@ -68,12 +70,14 @@ public class ManagerService {
 	public User createUser(String email, String name, String mobile) {
 		return users.createUser(email, name, mobile);
 	}
-
+	
+	// Authentication Support Methods
 	public boolean authenticateUser(String email, String password) {
 		LoginDetails details = this.logins.getLoginDetails(email);
 		return (details == null) ? false : details.getPassword().equals(password);
 	}
-
+	
+	// RESTful Web Service for Profile 
 	@GET
 	@Path(value = "/{email}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -84,6 +88,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(user)).build();
 	}
 
+	// RESTful Web Service for All Transactions
 	@GET
 	@Path(value = "/{email}/all-transactions")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -92,7 +97,8 @@ public class ManagerService {
 		log.debug("Sending all transactions of user : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getTransactions())).build();
 	}
-
+	
+	// RESTful Web Service for All Open Recurring Expenses
 	@GET
 	@Path(value = "/{email}/all-open-recurring-expenses")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -102,6 +108,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getAllRecurringExpenses())).build();
 	}
 
+	// RESTful Web Service for All Closed Recurring Expenses 
 	@GET
 	@Path(value = "/{email}/all-closed-recurring-expenses")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -111,6 +118,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getClosedRecurringExpenses())).build();
 	}
 
+	// RESTful Web Service for Recurring Expense by Name
 	@GET
 	@Path(value = "/{email}/recurring-open-expense/{name}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -119,7 +127,8 @@ public class ManagerService {
 		log.debug("Sending Recurring Expense of name : "+name+"to User : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getRecurringExpense(name))).build();
 	}
-
+	
+	// RESTful Web Service for Closed Recurring Expense by Name
 	@GET
 	@Path(value = "/{email}/recurring-closed-expense/{name}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -129,6 +138,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getClosedRecurringExpense(name))).build();
 	}
 
+	// RESTful Web Service for Current Month Data
 	@GET
 	@Path(value = "/{email}/current-month")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -137,7 +147,8 @@ public class ManagerService {
 		log.debug("Sending Current Month Stats to User : "+email);
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).currentMonth())).build();
 	}
-
+	
+	// RESTful Web Service for All Net Monthly Amounts
 	@GET
 	@Path(value = "/{email}/all-net-month-amount")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -147,6 +158,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getMonthly().getAllMonths())).build();
 	}
 
+	// RESTful Web Service for Net Month by Month and Year
 	@GET
 	@Path(value = "/{email}/net-month/{month}/{year}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -157,6 +169,7 @@ public class ManagerService {
 				.build();
 	}
 
+	// RESTful Web Service for Current Month Transactions
 	@GET
 	@Path(value = "/{email}/current-month-transactions")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -166,6 +179,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getCurrentMonthTransactions())).build();
 	}
 
+	// RESTful Web Service for Current Year Transactions
 	@GET
 	@Path(value = "/{email}/current-year-transactions")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -175,6 +189,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getCurrentYearTransactions())).build();
 	}
 
+	// RESTful Web Service for Year Transactions by Year
 	@GET
 	@Path(value = "/{email}/year-transactions/{year}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -184,6 +199,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(users.getUser(email).getYearTransactions(year))).build();
 	}
 	
+	// RESTful Web Service for Sign up
 	@POST
 	@Path(value="/sign-up")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -198,7 +214,8 @@ public class ManagerService {
 		log.debug("User Account Creation Successful");
 		return Response.ok(mapper.writeValueAsString(createdUser)).build();
 	}
-	 
+	
+	// RESTful Web Service for Creating a Recurring Expense 
 	@POST
 	@Path(value="/{email}/create-recurring")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -210,6 +227,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(exp)).build();
 	}
 	
+	// RESTful Web Service for Creating a Basic Recurring Expense
 	@POST
 	@Path(value="/{email}/create-recurring-basic")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -220,6 +238,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(exp)).build();
 	}
 	
+	// RESTful Web Service for Creating a Transaction
 	@POST
 	@Path(value="/{email}/create-transaction")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -231,6 +250,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(trans)).build();
 	}
 
+	// RESTful Web Service for Creating a Transaction under Recurrence Expense
 	@POST
 	@Path(value="/{email}/create-rec-transaction/")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -243,6 +263,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(trans)).build();
 	}
 	
+	// RESTful Web Service for updating a Transaction
 	@PUT
 	@Path(value="/{email}/transaction/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -259,6 +280,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(trans)).build();
 	}
 	
+	// RESTful Web Service for updating a Recurring Expense
 	@PUT
 	@Path(value="/{email}/modify-recurring/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -275,6 +297,7 @@ public class ManagerService {
 		return Response.ok(mapper.writeValueAsString(rec)).build();
 	}
 	
+	// RESTful Web Service for Closing a Recurring Expense on ID
 	@PUT
 	@Path(value="/{email}/close-recurring/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -283,6 +306,7 @@ public class ManagerService {
 		return Response.ok().build();
 	}
 	
+	// RESTful Web Service for Closing a Recurrence Expense by Name
 	@PUT
 	@Path(value="/{email}/close-recurring-name/{name}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -292,6 +316,7 @@ public class ManagerService {
 		return Response.ok(exp).build();
 	}
 	
+	// Support Method for Removing User
 	public User removeUser(String email) {
 		return users.removeUser(email);
 	}
