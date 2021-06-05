@@ -18,27 +18,15 @@ public class UserImpl {
 	
 	private UserImpl() {
 		this.users = new HashMap<>();
-		
-		users.put("madhu@gmail.com", new User("madhu@gmail.com","madhu","8686156086"));
-		users.put("madhu1@gmail.com", new User("madhu1@gmail.com","madhu_1","8686156087"));
-		users.put("madhu2@gmail.com", new User("madhu2@gmail.com","madhu_2","8686156088"));
-		users.put("ADMIN_USER", new User("ADMIN_USER","ADMIN_USER","ADMIN_USER"));
-		users.get("madhu@gmail.com").addTransaction(new Transaction("ECG",TransactionType.INCOME, TransactionCategory.JOB, PaymentMode.NET_BANKING,12345.0,"Monthly Pay" ));
-		users.get("madhu@gmail.com").addTransaction(new Transaction("EsdfsfCG",TransactionType.EXPENSE , TransactionCategory.JOB, PaymentMode.NET_BANKING,125.0,"Monthly Pay" ));
-		users.get("madhu@gmail.com").addTransaction(new Transaction("ECGsdf",TransactionType.INTEREST, TransactionCategory.JOB, PaymentMode.NET_BANKING,12345.0,"Monthly Pay" ));
-		users.get("madhu@gmail.com").addTransaction(new Transaction("ECfffG",TransactionType.INCOME, TransactionCategory.JOB, PaymentMode.NET_BANKING,12345.0,"Monthly Pay" ));
-		users.get("madhu@gmail.com").addTransaction(new Transaction("ECsfsfsG",TransactionType.INCOME, TransactionCategory.JOB, PaymentMode.NET_BANKING,12345.0,"Monthly Pay" ));
-		users.get("madhu@gmail.com").addTransaction(new Transaction("ECG",12,06,2020,TransactionType.INCOME, TransactionCategory.JOB, PaymentMode.NET_BANKING,5000.0,"Periodic Pay" ));
-		users.get("madhu@gmail.com").addTransaction(new Transaction("ECG",12,05,2020,TransactionType.INCOME, TransactionCategory.JOB, PaymentMode.NET_BANKING,5000.0,"Month- Pay" ));
-		
+		this.users.put("madhu@gmail.com", new User("madhu@gmail.com","Madhu Lakkoju", "8686156086"));
 	}
-	
+	// Single Instance returning method
 	public static UserImpl getObject() {
 		if(impl == null)
 			impl = new UserImpl();
 		return impl;
 	}
-	
+	// User Creating Support Methods
 	public User createUser(String email, String mobile) {
 		User user = users.get(email);
 		if(user == null) {

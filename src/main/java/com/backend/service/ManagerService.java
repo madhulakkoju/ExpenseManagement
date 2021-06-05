@@ -27,16 +27,14 @@ import com.backend.model.Transaction;
 import com.backend.model.TransactionCategory;
 import com.backend.model.TransactionType;
 import com.backend.model.User;
-
+// REST service Holder
 @Path(value = "manager")
 public class ManagerService {
 	private static Logger log = Logger.getLogger(ManagerService.class);
 	UserImpl users;
 	LoginImpl logins;
-
 	// Singleton Instance to be stored.
 	private static ManagerService instance;
-
 	private ManagerService() {
 		this.users = UserImpl.getObject();
 		this.logins = LoginImpl.getObject();
@@ -48,17 +46,14 @@ public class ManagerService {
 		}
 		return instance;
 	}
-
 	// New User Creating Support Methods
 	public User createNewUser(String email, String mobile, String password) {
 		logins.createLogin(email, password);
 		return this.createUser(email, mobile);
 	}
-
 	public User createUser(String email, String mobile) {
 		return users.createUser(email, mobile);
 	}
-
 	public User createNewUser(String email, String name, String mobile, String password) {
 		if(name == null) 
 			return this.createNewUser(email, mobile, password);
@@ -66,16 +61,14 @@ public class ManagerService {
 		logins.createLogin(email, password);
 		return this.createUser(email, name, mobile);
 	}
-
 	public User createUser(String email, String name, String mobile) {
 		return users.createUser(email, name, mobile);
-	}
-	
+	}	
 	// Authentication Support Methods
 	public boolean authenticateUser(String email, String password) {
 		LoginDetails details = this.logins.getLoginDetails(email);
 		return (details == null) ? false : details.getPassword().equals(password);
-	}
+	}	
 	
 	// RESTful Web Service for Profile 
 	@GET
@@ -87,7 +80,7 @@ public class ManagerService {
 		log.debug("sending user object : "+ user.getEmail());
 		return Response.ok(mapper.writeValueAsString(user)).build();
 	}
-
+	
 	// RESTful Web Service for All Transactions
 	@GET
 	@Path(value = "/{email}/all-transactions")
